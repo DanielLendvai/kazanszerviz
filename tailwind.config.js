@@ -7,8 +7,8 @@ module.exports = {
         rubik: ["Rubik", "sans-serif"],
       },
       boxShadow: {
-        topShadow: "20px 5px 20px 20px rgba(120, 120, 120, 0.25)",
-        bottomShadow: "20px 5px 20px 20px rgba(125, 125, 125, 0.25)",
+        topShadow: "20px 5px 20px 20px rgba(225, 225, 225, 0.45)",
+        bottomShadow: "0px 5px 25px 5px rgba(225, 225, 225, 0.3)",
       },
       dropShadow: {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.6)",
