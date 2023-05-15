@@ -1,0 +1,49 @@
+<div
+  class="max-w-screen relative flex flex-col shadow-bottomShadow bg-gray-700 py-[1.1rem] max-sm:gap-5 z-50"
+>
+  <div class="max-w-screen flex justify-end">
+    <div
+      class="font-rubik text-base text-white drop-shadow-base flex flex-wrap gap-2 pr-5"
+    >
+      <p><i class="fa-solid fa-phone fa-sm"></i> +36-30-123-4567</p>
+      <p><i class="fa-solid fa-envelope-open fa-sm"></i> address@email.hu</p>
+    </div>
+  </div>
+  <div class="w-screen flex gap-10 justify-center">
+    <div
+      class="logo absolute left-5 top-[30px] max-sm:hidden hover:animate-ping"
+    >
+      <a routerLink="/home"
+        ><i class="fa-solid fa-toolbox fa-2xl" style="color: white"></i
+      ></a>
+    </div>
+    <div
+      class="flex flex-wrap gap-5 font-rubik sm:text-xl text-white tracking-wider"
+    >
+      <div>
+        <a
+          class="nav-link"
+          routerLink="/aboutus"
+          (click)="onClick('aboutus')"
+          >Rólunk</a
+        >
+      </div>
+      <div>
+        <a
+          class="nav-link"
+          routerLink="/contact"
+          (click)="onClick('contact')"
+          >Kapcsolat</a
+        >
+      </div>
+      <div>
+        <a
+          class="nav-link"
+          routerLink="/services"
+          (click)="onClick('services')"
+          >Szolgáltatásaink</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

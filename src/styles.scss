@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@layer utilities {
+    .nav-link {
+        @apply relative hover:text-white
+    }
+    .nav-link::after {
+        @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
+    }
+    .nav-link:hover::after {
+        @apply w-[100%]
+    }
+    .page-container {
+        @apply w-screen min-h-[760px] flex;
+    }
+}
+
+body,html {
+    height:100%;
+    overflow-x: hidden;
+}
