@@ -12,7 +12,7 @@ import { RouterOutlet } from '@angular/router';
 /*         style({ position: 'relative' }),
         style({ transform: 'translateY(-100%)' }), */
         style({opacity: "0"}),
-        animate('1.5s', style({ /* transform: 'translateY(0)', */ opacity: "1" })),
+        animate('1s', style({ /* transform: 'translateY(0)', */ opacity: "1" })),
       ]),
     ]),
   ],
