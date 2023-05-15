@@ -1,14 +1,16 @@
 <div
-  class="max-w-screen relative flex flex-col shadow-bottomShadow bg-gray-700 py-[1.1rem] max-sm:gap-5 z-50"
+  class="w-screen bg-[#00B8A3] relative text-base text-white flex shadow-bottomShadow py-5 pl-2 z-50 gap-10"
 >
-  <div class="max-w-screen flex justify-end">
-    <div
-      class="font-rubik text-base text-white flex flex-wrap-reverse gap-2 pr-5"
-    >
-      <p class="drop-shadow-base"><i class="fa-solid fa-phone fa-sm"></i> +36-30-123-4567</p>
-      <p class="drop-shadow-base"><i class="fa-solid fa-envelope-open fa-sm"></i> address@email.hu</p>
-      <div class="flex gap-1">
-        <img
+  <div class="font-rubik  flex gap-2">
+    <p class="drop-shadow-base">
+      <i class="fa-solid fa-phone fa-sm"></i> +36-30-123-4567
+    </p>
+    <p class="drop-shadow-base">
+      <i class="fa-solid fa-envelope-open fa-sm"></i> address@email.hu
+    </p>
+    <!-- language selector -->
+    <!--     <div class="flex gap-1">
+      <img
         class="max-h-[20px] my-auto"
         src="assets/images/flag_en.png"
         alt="english"
@@ -20,44 +22,41 @@
         alt="magyar"
         (click)="changeLanguage('hu')"
       />
-      </div>
-    </div>
+    </div> -->
   </div>
-  <div class="w-screen flex gap-10 justify-center">
-    <div
-      class="logo absolute left-5 top-[30px] max-sm:hidden hover:animate-ping"
-    >
-      <a routerLink="/home"
-        ><i class="fa-solid fa-toolbox fa-2xl" style="color: white"></i
-      ></a>
-    </div>
-    <div
-      class="flex flex-wrap gap-5 font-rubik sm:text-xl text-white tracking-wider"
-    >
-      <div>
-        <a
-          class="nav-link drop-shadow-base"
-          routerLink="/aboutus"
-          (click)="onClick('aboutus')"
-          >{{ "nav_aboutus" | translate }}</a
-        >
-      </div>
-      <div>
-        <a
-          class="nav-link drop-shadow-base"
-          routerLink="/contact"
-          (click)="onClick('contact')"
-          >{{ "nav_contact" | translate }}</a
-        >
-      </div>
-      <div>
-        <a
-          class="nav-link drop-shadow-base"
-          routerLink="/services"
-          (click)="onClick('services')"
-          >{{ "nav_services" | translate }}</a
-        >
-      </div>
-    </div>
+  <div class="flex justify-center gap-2">
+    <p><a routerLink="/contact">Kapcsolat</a></p>
+    <p><a routerLink="/aboutus">Rólunk</a></p>
+    <p><a routerLink="/services">Szolgáltatások</a></p>
+    <p><a routerLink="/home">Home</a></p>
   </div>
+  <!-- menu links -->
+  <!-- <div
+    class="flex text-white"
+  >
+    <div>
+      <a
+        class="nav-link drop-shadow-base"
+        routerLink="/aboutus"
+        (click)="onClick('aboutus')"
+        >{{ "nav_aboutus" | translate }}</a
+      >
+    </div>
+    <div>
+      <a
+        class="nav-link drop-shadow-base"
+        routerLink="/contact"
+        (click)="onClick('contact')"
+        >{{ "nav_contact" | translate }}</a
+      >
+    </div>
+    <div>
+      <a
+        class="nav-link drop-shadow-base"
+        routerLink="/services"
+        (click)="onClick('services')"
+        >{{ "nav_services" | translate }}</a
+      >
+    </div>
+  </div> -->
 </div>

@@ -18,8 +18,10 @@
         @apply flex flex-col;
     }
 }
-
-body,html {
-    height:100%;
+app-root {
+    display: block;
+    height: 100%;
+  }
+body {
     overflow-x: hidden;
-}
+  }

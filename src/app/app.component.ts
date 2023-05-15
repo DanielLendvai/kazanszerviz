@@ -14,7 +14,7 @@ import { TranslationService } from './services/translation.service';
         style({ transform: 'translateY(-100%)' }), */
         style({ opacity: '0' }),
         animate(
-          '1s',
+          '0.3s',
           style({ /* transform: 'translateY(0)', */ opacity: '1' })
         ),
       ]),
