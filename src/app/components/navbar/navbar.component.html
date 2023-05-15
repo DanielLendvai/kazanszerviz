@@ -3,10 +3,24 @@
 >
   <div class="max-w-screen flex justify-end">
     <div
-      class="font-rubik text-base text-white drop-shadow-base flex flex-wrap gap-2 pr-5"
+      class="font-rubik text-base text-white flex flex-wrap gap-2 pr-5"
     >
-      <p><i class="fa-solid fa-phone fa-sm"></i> +36-30-123-4567</p>
-      <p><i class="fa-solid fa-envelope-open fa-sm"></i> address@email.hu</p>
+      <p class="drop-shadow-base"><i class="fa-solid fa-phone fa-sm"></i> +36-30-123-4567</p>
+      <p class="drop-shadow-base"><i class="fa-solid fa-envelope-open fa-sm"></i> address@email.hu</p>
+      <div class="flex gap-1">
+        <img
+        class="max-h-[20px] my-auto"
+        src="assets/images/flag_en.png"
+        alt="english"
+        (click)="changeLanguage('en')"
+      />
+      <img
+        class="max-h-[20px] my-auto"
+        src="assets/images/flag_hu.png"
+        alt="magyar"
+        (click)="changeLanguage('hu')"
+      />
+      </div>
     </div>
   </div>
   <div class="w-screen flex gap-10 justify-center">
@@ -25,7 +39,7 @@
           class="nav-link"
           routerLink="/aboutus"
           (click)="onClick('aboutus')"
-          >Rólunk</a
+          >{{ "nav_aboutus" | translate }}</a
         >
       </div>
       <div>
@@ -33,7 +47,7 @@
           class="nav-link"
           routerLink="/contact"
           (click)="onClick('contact')"
-          >Kapcsolat</a
+          >{{ "nav_contact" | translate }}</a
         >
       </div>
       <div>
@@ -41,7 +55,7 @@
           class="nav-link"
           routerLink="/services"
           (click)="onClick('services')"
-          >Szolgáltatásaink</a
+          >{{ "nav_services" | translate }}</a
         >
       </div>
     </div>
