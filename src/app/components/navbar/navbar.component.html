@@ -1,8 +1,8 @@
-<div
-  class="w-screen bg-transparent relative border-b border-b-1 border-opacity-60 border-b-white text-base text-white flex flex-wrap-reverse py-2 sm:py-5 px-1 sm:px-6 z-50 sm:gap-10"
+<nav
+  class="w-screen bg-transparent relative border-b-[1px] border-solid border-b-[#3d2154] text-base text-black flex flex-wrap-reverse py-2 sm:py-5 px-1 sm:px-6 z-50 sm:gap-10"
 >
-  <!-- nav links -->
-  <div class="flex font-rubick justify-center text-xl gap-2">
+
+  <div class="flex font-rubik justify-center text-xl gap-2">
     <p>
       <a
         class="nav-link drop-shadow-base"
@@ -11,7 +11,7 @@
         >{{ "nav_home" | translate }}</a
       >
     </p>
-    <!--     <p><a routerLink="/aboutus">Rólunk</a></p> -->
+
     <p>
       <a
         class="nav-link drop-shadow-base"
@@ -29,16 +29,19 @@
       >
     </p>
   </div>
-  <!-- infos -->
-  <div class="font-rubick text-xl sm:ml-auto font-normal flex flex-row flex-wrap-reverse max-sm:pb-2 gap-2">
-    <p class="drop-shadow-base whitespace-nowrap">
-      <i class="fa-solid fa-phone fa-sm"></i> +36-30-123-4567
-    </p>
+
+  <div
+    class="font-rubik text-xl sm:ml-auto font-normal flex flex-row flex-wrap-reverse max-sm:pb-2 gap-2"
+  >
+    <div class="flex gap-1">
+      <i class="fa-solid fa-phone my-auto"></i>
+      <p class="drop-shadow-base">+36-30-123-4567</p>
+    </div>
     <p class="drop-shadow-base whitespace-nowrap">
       <i class="fa-solid fa-envelope-open fa-sm"></i> address@email.hu
     </p>
   </div>
-</div>
+</nav>
 
 <!-- language selector -->
 <!--     <div class="flex gap-1">

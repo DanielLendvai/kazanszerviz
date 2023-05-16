@@ -8,10 +8,10 @@
 
 @layer utilities {
     .nav-link {
-        @apply relative hover:text-white
+        @apply relative hover:text-[#4e5072]
     }
     .nav-link::after {
-        @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
+        @apply content-[''] bg-[#4e5072] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
     }
     .nav-link:hover::after {
         @apply w-[100%]
