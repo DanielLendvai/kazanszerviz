@@ -5,9 +5,11 @@ module.exports = {
     extend: {
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],
+        ysabeau: ["Ysabeau", "sans-serif"],
+        imprima: ["Imprima", "sans-serif"]
       },
       boxShadow: {
-        topShadow: "20px 5px 20px 20px rgba(225, 225, 225, 0.45)",
+        topShadow: "20px 5px 20px 20px rgba(225, 225, 225, 0.2)",
         bottomShadow: "0px 5px 25px 5px rgba(225, 225, 225, 0.3)",
       },
       dropShadow: {

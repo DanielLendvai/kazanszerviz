@@ -1,36 +1,14 @@
 <div
-  class="w-screen bg-transparent relative text-base text-white flex flex-wrap justify-between shadow-bottomShadow sm:py-5 px-1 sm:px-6 z-50 sm:gap-10"
+  class="w-screen bg-transparent relative border-b border-b-1 border-opacity-60 border-b-white text-base text-white flex flex-wrap-reverse py-2 sm:py-5 px-1 sm:px-6 z-50 sm:gap-10"
 >
-  <div class="font-rubik text-base sm:flex gap-2">
-    <p class="drop-shadow-base">
-      <i class="fa-solid fa-phone fa-sm"></i> +36-30-123-4567
-    </p>
-    <p class="drop-shadow-base">
-      <i class="fa-solid fa-envelope-open fa-sm"></i> address@email.hu
-    </p>
-    <!-- language selector -->
-    <!--     <div class="flex gap-1">
-      <img
-        class="max-h-[20px] my-auto"
-        src="assets/images/flag_en.png"
-        alt="english"
-        (click)="changeLanguage('en')"
-      />
-      <img
-        class="max-h-[20px] my-auto"
-        src="assets/images/flag_hu.png"
-        alt="magyar"
-        (click)="changeLanguage('hu')"
-      />
-    </div> -->
-  </div>
-  <div class="flex font-rubik justify-center text-base gap-2">
+  <!-- nav links -->
+  <div class="flex font-rubick justify-center text-xl gap-2">
     <p>
       <a
         class="nav-link drop-shadow-base"
-        routerLink="/contact"
-        (click)="onClick('contact')"
-        >{{ "nav_contact" | translate }}</a
+        routerLink="/home"
+        (click)="onClick('home')"
+        >{{ "nav_home" | translate }}</a
       >
     </p>
     <!--     <p><a routerLink="/aboutus">Rólunk</a></p> -->
@@ -45,39 +23,35 @@
     <p>
       <a
         class="nav-link drop-shadow-base"
-        routerLink="/home"
-        (click)="onClick('home')"
-        >{{ "nav_home" | translate }}</a
-      >
-    </p>
-  </div>
-  <!-- menu links -->
-  <!-- <div
-    class="flex text-white"
-  >
-    <div>
-      <a
-        class="nav-link drop-shadow-base"
-        routerLink="/aboutus"
-        (click)="onClick('aboutus')"
-        >{{ "nav_aboutus" | translate }}</a
-      >
-    </div>
-    <div>
-      <a
-        class="nav-link drop-shadow-base"
         routerLink="/contact"
         (click)="onClick('contact')"
         >{{ "nav_contact" | translate }}</a
       >
-    </div>
-    <div>
-      <a
-        class="nav-link drop-shadow-base"
-        routerLink="/services"
-        (click)="onClick('services')"
-        >{{ "nav_services" | translate }}</a
-      >
-    </div>
-  </div> -->
+    </p>
+  </div>
+  <!-- infos -->
+  <div class="font-rubick text-xl sm:ml-auto font-normal flex flex-row flex-wrap-reverse max-sm:pb-2 gap-2">
+    <p class="drop-shadow-base whitespace-nowrap">
+      <i class="fa-solid fa-phone fa-sm"></i> +36-30-123-4567
+    </p>
+    <p class="drop-shadow-base whitespace-nowrap">
+      <i class="fa-solid fa-envelope-open fa-sm"></i> address@email.hu
+    </p>
+  </div>
 </div>
+
+<!-- language selector -->
+<!--     <div class="flex gap-1">
+      <img
+      class="max-h-[20px] my-auto"
+      src="assets/images/flag_en.png"
+      alt="english"
+      (click)="changeLanguage('en')"
+      />
+      <img
+      class="max-h-[20px] my-auto"
+      src="assets/images/flag_hu.png"
+      alt="magyar"
+      (click)="changeLanguage('hu')"
+      />
+    </div> -->

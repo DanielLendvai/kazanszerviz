@@ -12,9 +12,9 @@ import { TranslationService } from './services/translation.service';
       transition('* <=> *', [
         /*         style({ position: 'relative' }),
         style({ transform: 'translateY(-100%)' }), */
-        style({ opacity: '0' }),
+        style({ opacity: '0.5' }),
         animate(
-          '0.3s',
+          '0.5s',
           style({ /* transform: 'translateY(0)', */ opacity: '1' })
         ),
       ]),
