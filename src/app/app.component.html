@@ -1,4 +1,5 @@
+<app-navbar [activeComponent]="activeComponent" [componentColorMap]="componentColorMap"></app-navbar>
 <div [@routeAnimation]="getAnimationState(routerOutlet)">
     <router-outlet #routerOutlet="outlet"></router-outlet>
 </div>
-<app-footer></app-footer>
+<app-footer [activeComponent]="activeComponent" [componentColorMap]="componentColorMap"></app-footer>

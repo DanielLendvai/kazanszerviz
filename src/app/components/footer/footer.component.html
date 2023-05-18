@@ -1,22 +1,23 @@
-<div
-  class="w-screen bg-[#4a392be3] font-imprima shadow-topShadow relative flex justify-between items-center px-4 py-7 z-50"
+<footer
+[ngStyle]="{ 'background': componentColorMap[activeComponent] }" 
+  class="w-screen font-imprima shadow-topShadow relative flex justify-between items-center px-4 py-7 z-50"
 >
   <div class="">
-    <ul class="text-left  text-white pr-2">
+    <ul class="text-left text-[#ffffff] pr-2">
       <li>Lorem.</li>
       <li>Lorem.</li>
     </ul>
   </div>
   <div class="">
-    <ul class="text-center text-white pr-2">
+    <ul class="text-center text-[#ffffff] pr-2">
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</li>
       <li>Lorem.</li>
     </ul>
   </div>
   <div class="">
-    <ul class="text-right text-white pr-2">
+    <ul class="text-right text-[#ffffff] pr-2">
       <li>Tamás Csaba E.V.</li>
       <li>Lorem ipsum</li>
     </ul>
   </div>
-</div>
+</footer>

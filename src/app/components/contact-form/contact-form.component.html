@@ -1,0 +1,18 @@
+<form class="contact-form w-[350px] border-2" (ngSubmit)="sendEmail($event)">
+    <div class="border-2">
+        <label>Név</label>
+        <input class="w-full" type="text" name="user_name">
+    </div>
+    <div class="border-2">
+        <label>Email</label>
+        <input class="w-full" type="email" name="user_email">
+    </div>
+    <div class="border-2">
+        <label>Üzenet</label>
+        <textarea class="w-full" name="message"></textarea>
+    </div>
+    <div class="border-2">
+        <button class="w-full" type="submit">Küldés</button>
+    </div>
+</form>
+

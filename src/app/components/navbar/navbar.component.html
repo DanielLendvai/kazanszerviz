@@ -1,11 +1,12 @@
-<nav
-  class="w-screen bg-transparent relative border-b-[1px] border-solid border-b-[#3d2154] text-base text-black flex flex-wrap-reverse py-2 sm:py-5 px-1 sm:px-6 z-50 sm:gap-10"
+<!-- <nav
+[ngStyle]="{ 'background-color': componentColorMap[activeComponent] }"  
+class="w-screen relative border-b-[1px] border-solid border-b-[#3d2154] text-base text-white shadow-bottomShadow flex flex-wrap-reverse py-2 sm:py-5 px-1 sm:px-6 z-50 sm:gap-10"
 >
 
   <div class="flex font-rubik justify-center text-xl gap-2">
     <p>
       <a
-        class="nav-link drop-shadow-base"
+        class="nav-link drop-shadow-sm"
         routerLink="/home"
         (click)="onClick('home')"
         >{{ "nav_home" | translate }}</a
@@ -14,7 +15,7 @@
 
     <p>
       <a
-        class="nav-link drop-shadow-base"
+        class="nav-link drop-shadow-sm"
         routerLink="/services"
         (click)="onClick('services')"
         >{{ "nav_services" | translate }}</a
@@ -22,7 +23,7 @@
     </p>
     <p>
       <a
-        class="nav-link drop-shadow-base"
+        class="nav-link drop-shadow-sm"
         routerLink="/contact"
         (click)="onClick('contact')"
         >{{ "nav_contact" | translate }}</a
@@ -35,14 +36,14 @@
   >
     <div class="flex gap-1">
       <i class="fa-solid fa-phone my-auto"></i>
-      <p class="drop-shadow-base">+36-30-123-4567</p>
+      <p class="drop-shadow-sm">+36-30-123-4567</p>
     </div>
-    <p class="drop-shadow-base whitespace-nowrap">
+    <p class="drop-shadow-sm whitespace-nowrap">
       <i class="fa-solid fa-envelope-open fa-sm"></i> address@email.hu
     </p>
   </div>
 </nav>
-
+ -->
 <!-- language selector -->
 <!--     <div class="flex gap-1">
       <img
@@ -58,3 +59,70 @@
       (click)="changeLanguage('hu')"
       />
     </div> -->
+
+<nav
+  [ngStyle]="{ background: componentColorMap[activeComponent] }"
+  class="flex px-4 font-rubik text-[#ffffff] shadow-xl z-50 items-center relative"
+>
+  <div class="font-bold md:py-0 py-4">logo</div>
+  <ul
+    class="text-base uppercase md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0"
+  >
+    <li>
+      <a routerLink="/home" class="nav-link flex md:inline-flex p-4 items-center">
+        <span>{{ "nav_home" | translate }}</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/contact" class="nav-link flex md:inline-flex p-4 items-center">
+        <span>{{"nav_contact" | translate}}</span>
+      </a>
+    </li>
+    <li class="relative parent">
+      <a
+        routerLink="/services"
+        class="flex justify-between md:inline-flex p-4 items-center space-x-2"
+      >
+        <span>{{"nav_services" | translate}}</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-4 h-4 fill-current pt-1"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+          />
+        </svg>
+      </a>
+      <ul
+        class="child text-black transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b"
+      >
+        <li>
+          <a href="#" class="flex px-4 py-3"> Web development </a>
+        </li>
+        <li>
+          <a href="#" class="flex px-4 py-3"> Web Design </a>
+        </li>
+        <li>
+          <a href="#" class="flex px-4 py-3"> Machine Learning </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#" class="nav-link flex md:inline-flex p-4 items-center">
+        <span>{{"nav_aboutus" | translate }}</span>
+      </a>
+    </li>
+  </ul>
+  <div class="ml-auto md:hidden text-gray-500 cursor-pointer">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-5 h-5 fill-current"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
+      />
+    </svg>
+  </div>
+</nav>

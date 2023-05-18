@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { TranslationService } from './services/translation.service';
 
 @Component({
@@ -23,7 +23,30 @@ import { TranslationService } from './services/translation.service';
 })
 export class AppComponent implements OnInit {
   title = 'kazanszerviz';
-  constructor(private translationService: TranslationService) {}
+
+  activeComponent!: string;
+  componentColorMap: { [key: string]: string } = {
+    '/home': '#6f899a', 
+    '/services': '#3ABFC6',  
+    '/contact': '#64B5F6'     
+  };
+  componentGradientMap: { [key: string]: string } = {
+    '/home': 'linear-gradient(to right, #b1b2bf61, #3ABFC6)',        
+    '/services': 'linear-gradient(to right, #3ABFC6, #64B5F6)',  
+    '/contact': 'linear-gradient(to right, #64B5F6, #b1b2bf61)'
+  }
+
+  constructor(
+    private router: Router,
+    private translationService: TranslationService
+  ) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.activeComponent = event.urlAfterRedirects; // Update based on your routing configuration
+      }
+    });
+  }
+
   ngOnInit() {
     this.translationService.init();
   }

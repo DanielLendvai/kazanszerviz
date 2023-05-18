@@ -8,16 +8,19 @@
 
 @layer utilities {
     .nav-link {
-        @apply relative hover:text-[#4e5072]
+        @apply relative hover:text-flameColor
     }
     .nav-link::after {
-        @apply content-[''] bg-[#4e5072] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
+        @apply content-[''] bg-flameColor h-[2px] w-[0%] left-0 -bottom-[1px] rounded-xl absolute duration-300
     }
     .nav-link:hover::after {
         @apply w-[100%]
     }
     .page-container {
         @apply flex flex-col;
+    }
+    .card-border {
+        @apply border-[2px] border-solid border-blue-950 border-opacity-40
     }
 }
 app-root {
