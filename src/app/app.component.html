@@ -1,6 +1,8 @@
 <!-- <app-navbar [activeComponent]="activeComponent" [componentColorMap]="componentColorMap"></app-navbar> -->
-<app-navbar></app-navbar>
-<div [@routeAnimation]="getAnimationState(routerOutlet)">
-    <router-outlet #routerOutlet="outlet"></router-outlet>
+<div #scrollContainer cdkScrollable>
+    <app-navbar></app-navbar>
+    <div [@routeAnimation]="getAnimationState(routerOutlet)">
+        <router-outlet #routerOutlet="outlet"></router-outlet>
+    </div>
+    <app-footer></app-footer>
 </div>
-<app-footer></app-footer>

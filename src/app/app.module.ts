@@ -17,6 +17,8 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/');
@@ -42,6 +44,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ScrollingModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
