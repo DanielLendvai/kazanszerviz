@@ -1,6 +1,6 @@
-<div id="home-bg" class="w-screen min-h-screen relative flex flex-col">
-   <div
-    class="text-center max-sm:mx-4 font-montserrat py-16 flex flex-col gap-5"
+<div class="bg-transparent w-screen min-h-screen relative  flex flex-col">
+  <div
+    class="text-center max-sm:mx-4 font-montserrat py-16 flex flex-col gap-5 z-10"
   >
     <p class="text-4xl drop-shadow-md text-[#575757] font-bold">
       Vállalkozásunk széleskörű kazán, cirkó és konvektor szerelési
@@ -13,16 +13,18 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores neque
       cumque molestiae nesciunt amet voluptas. Repudiandae est porro minima eos.
     </p>
-  </div> 
+  </div>
 
-<!--  -->
-
-<!--  -->
+  <!--  -->
+  <svg class="absolute w-3/4 -left-[100px] lg:-left-[500px] opacity-35" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#f46255" d="M49.7,-17.7C54.7,-0.8,42.4,20.3,21.8,36.7C1.3,53.2,-27.3,65.2,-45.6,54C-63.8,42.8,-71.7,8.5,-62.3,-14.4C-53,-37.3,-26.5,-48.7,-2.1,-48C22.4,-47.3,44.7,-34.6,49.7,-17.7Z" transform="translate(100 100)" />
+  </svg>
+  <!--  -->
   <div
-    class="pt-10 flex flex-wrap text-black justify-center items-center gap-10 sm:pb-16"
+    class="pt-10 flex flex-wrap text-black justify-center items-center gap-10 sm:pb-16 z-10"
   >
     <div
-    routerLink="/services"
+      routerLink="/services"
       class="max-w-sm max-sm:mx-5 hover:scale-110 transition duration-500 ease-in-out card-border hover:cursor-pointer hover:border-flameColor rounded-xl overflow-hidden shadow-lg"
     >
       <img
@@ -31,7 +33,9 @@
         alt="Sunset in the mountains"
       />
       <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2 text-flameColor">Szolgáltatásaink</div>
+        <div class="font-bold text-xl mb-2 text-flameColor">
+          Szolgáltatásaink
+        </div>
         <p class="text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
           quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
@@ -69,7 +73,9 @@
         alt="Sunset in the mountains"
       />
       <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2 text-flameColor">Ide is majd valami</div>
+        <div class="font-bold text-xl mb-2 text-flameColor">
+          Ide is majd valami
+        </div>
         <p class="text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
           quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
@@ -83,62 +89,137 @@
       alt=""
     />
   </div>
-  <div class="bg-white font pt-10 pb-32">
+  <div class="bg-transparent font pt-10 pb-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:text-center">
-        <h2 class="text-xl font-semibold leading-7 text-indigo-600">Lorem, ipsum.</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-        <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+        <h2 class="text-xl font-semibold leading-7 text-indigo-600">
+          Lorem, ipsum.
+        </h2>
+        <p
+          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing.
+        </p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">
+          Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+          Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
+          In mi viverra elit nunc.
+        </p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <dl
+          class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+        >
           <div class="relative pl-16">
             <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z"
+                  />
                 </svg>
               </div>
               Push to deploy
             </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+              suspendisse semper morbi. Odio urna massa nunc massa.
+            </dd>
           </div>
           <div class="relative pl-16">
             <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                  />
                 </svg>
               </div>
               SSL certificates
             </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.</dd>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              Sit quis amet rutrum tellus ullamcorper ultricies libero dolor
+              eget. Sem sodales gravida quam turpis enim lacus amet.
+            </dd>
           </div>
           <div class="relative pl-16">
             <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                  />
                 </svg>
               </div>
               Simple queues
             </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.</dd>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              Quisque est vel vulputate cursus. Risus proin diam nunc commodo.
+              Lobortis auctor congue commodo diam neque.
+            </dd>
           </div>
           <div class="relative pl-16">
             <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33"
+                  />
                 </svg>
               </div>
               Advanced security
             </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis
+              aliquet hac quis. Id hac maecenas ac donec pharetra eget.
+            </dd>
           </div>
         </dl>
       </div>
     </div>
   </div>
-  
 </div>
