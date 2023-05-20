@@ -10,9 +10,10 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        flameColor: '#f46255',
-        flameColor2: '#e16221',
-        waterColor: '#0090b3',
+        flameColor: "#f46255",
+        flameColor2: "#e16221",
+        waterColor: "#0090b3",
+        grayColor: "#6e8899",
       },
       boxShadow: {
         topShadow: "2px 0px 20px 10px rgba(225, 225, 225, 0.22)",
