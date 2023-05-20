@@ -7,6 +7,7 @@ module.exports = {
         rubik: ["Rubik", "sans-serif"],
         ysabeau: ["Ysabeau", "sans-serif"],
         imprima: ["Imprima", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
         flameColor: '#f46255',

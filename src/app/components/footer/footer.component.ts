@@ -6,6 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  @Input() activeComponent!: string;
-  @Input() componentColorMap!: { [key: string]: string };
+
 }

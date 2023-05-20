@@ -26,9 +26,9 @@ export class AppComponent implements OnInit {
 
   activeComponent!: string;
   componentColorMap: { [key: string]: string } = {
-    '/home': '#6f899a', 
-    '/services': '#3ABFC6',  
-    '/contact': '#64B5F6'     
+    '/home': 'white', 
+    '/services': '#575757',  
+    '/contact': '#bdbdbd'     
   };
   componentGradientMap: { [key: string]: string } = {
     '/home': 'linear-gradient(to right, #b1b2bf61, #3ABFC6)',        
