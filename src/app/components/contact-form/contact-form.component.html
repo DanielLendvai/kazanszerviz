@@ -1,7 +1,7 @@
-<form (submit)="submitForm()">
+<!-- <form (submit)="submitForm()" class="w-fit flex flex-col border-2 border-red-500">
     <div>
       <label for="name">Az ön neve:</label>
-      <input type="name" id="name" name="name" [(ngModel)]="name" required>
+      <input type="name" id="name" name="name" class="border-1 border-black" [(ngModel)]="name" required />
     </div>
     <div>
       <label for="email">Email:</label>
@@ -36,3 +36,133 @@
     </div>
     <button type="submit" class="border">Küldés</button>
 </form>
+ -->
+<div class="min-h-screen bg-gray-100 p-0 sm:p-12">
+  <div
+    class="mx-auto max-w-md px-6 py-12 bg-white border-0 shadow-lg sm:rounded-3xl"
+  >
+    <h1 class="text-2xl font-bold mb-8">Kérjen ajánlatot!</h1>
+    <form id="form" (submit)="submitForm()">
+      <div class="relative z-0 w-full mb-5">
+        <input
+          type="text"
+          name="name"
+          placeholder=" "
+          required
+          class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+        />
+        <label
+          for="name"
+          class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
+          >Az ön neve</label
+        >
+      </div>
+
+      <div class="relative z-0 w-full mb-5">
+        <input
+          type="email"
+          name="email"
+          placeholder=" "
+          class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+        />
+        <label
+          for="email"
+          class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
+          >Email címe</label
+        >
+      </div>
+      <div class="relative z-0 w-full mb-5">
+        <input
+          type="text"
+          id="telephone"
+          name="telephone"
+          [(ngModel)]="telephone"
+          required
+          placeholder=" "
+          class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+        />
+        <label
+          for="telephone"
+          class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
+          >Az ön telefonszáma</label
+        >
+      </div>
+      <div class="relative z-0 w-full mb-5">
+        <input
+          type="text"
+          id="location"
+          name="location"
+          [(ngModel)]="location"
+          required
+          placeholder=" "
+          class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+        />
+        <label
+          for="location"
+          class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
+          >Település / kerület:
+        </label>
+      </div>
+      <fieldset class="relative z-0 w-full p-px mb-5">
+        <legend
+          class="absolute text-gray-500 transform scale-75 -top-3 origin-0"
+        >
+          Miben segíthetünk?
+        </legend>
+        <div class="block pt-3 pb-2 space-x-4">
+          <label>
+            <input
+              type="checkbox"
+              id="checkbox1"
+              name="checkboxes"
+              value="Gázkészülék javítás"
+              [checked]="isSelected('Gázkészülék javítás')"
+              (change)="toggleCheckbox('Gázkészülék javítás')"
+              class="mr-2 text-black border-2 border-gray-300 focus:border-gray-300 focus:ring-black"
+            />
+            Gázkészülék javítás
+          </label>
+          <!-- <label>
+            <input
+              type="checkbox"
+              id="checkbox2"
+              name="checkboxes"
+              value="Gázkészülék"
+              [checked]="isSelected('Gázkészülék javítás')"
+              (change)="toggleCheckbox('Gázkészülék javítás')"
+              class="mr-2 text-black border-2 border-gray-300 focus:border-gray-300 focus:ring-black"
+            />
+            Option 2
+          </label> -->
+        </div>
+      </fieldset>
+      <div class="relative z-0 w-full mb-5">
+        <input
+          type="text"
+          id="message"
+          name="message"
+          [(ngModel)]="message"
+          required
+          placeholder=" "
+          class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+        />
+        <label
+          for="message"
+          class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
+          >Kérjük írja le üzenetét.</label
+        >
+      </div>
+      <button
+        [disabled]="isSubmitting"
+        type="submit"
+        class="w-full px-6 py-3 mt-3 text-lg text-white transition-all duration-150 ease-linear rounded-lg shadow outline-none bg-flameColor hover:bg-pink-600 hover:shadow-lg focus:outline-none"
+      >
+        {{ isSubmitting ? "Küldés, kérem várjon..." : "Küldés" }}
+      </button>
+    </form>
+    <div *ngIf="showMessage" class="flex flex-col font-bold text-base py-5">
+      <span>Köszönjük érdeklődését.</span>
+      <span>{{ responseMessage }}</span>
+    </div>
+  </div>
+</div>

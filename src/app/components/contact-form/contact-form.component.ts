@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { EmailService } from 'src/app/services/email.service';
 
 @Component({
@@ -13,7 +14,10 @@ export class ContactFormComponent {
   location!: string;
   telephone!: number;
   selectedCheckboxes: string[] = [];
-  constructor(private emailService: EmailService) {}
+  isSubmitting: boolean = false;
+  showMessage: boolean = false;
+  responseMessage: string = 'Kollégánk hamarosan felveszi Önnel a kapcsolatot.';
+  constructor(private emailService: EmailService,  private router: Router) {}
 
   isSelected(value: string): boolean {
     return this.selectedCheckboxes.includes(value);
@@ -30,11 +34,11 @@ export class ContactFormComponent {
       // Select the checkbox
       this.selectedCheckboxes.push(value);
     }
-    console.log(this.selectedCheckboxes)
   }
 
   submitForm(): void {
     // Send the email
+    this.isSubmitting = true;
     this.emailService
       .sendContactEmail(
         this.name,
@@ -48,6 +52,11 @@ export class ContactFormComponent {
         (response) => {
           console.log(response); // Handle the response from the server
           // Optionally, you can display a success message to the user or navigate to a success page
+          this.isSubmitting = true; // Hide loader
+          this.showMessage = true; // Show message
+          setTimeout(() => {
+            this.router.navigate(['/home']);
+          }, 3000);
         },
         (error) => {
           console.error(error); // Handle any errors that occurred during the request
