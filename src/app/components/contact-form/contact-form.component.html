@@ -1,5 +1,9 @@
 <form (submit)="submitForm()">
     <div>
+      <label for="name">Az ön neve:</label>
+      <input type="name" id="name" name="name" [(ngModel)]="name" required>
+    </div>
+    <div>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" [(ngModel)]="email" required>
     </div>
@@ -7,6 +11,15 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
     </div>
-    <button type="submit">Submit</button>
-  </form>
+    <div>
+      <label for="telephone">Telefon:</label>
+      <input type="text" id="telephone" name="telephone" [(ngModel)]="telephone" required>
+    </div>
+    <div>
+      <label for="location">Település, kerület:</label>
+      <input type="text" id="location" name="location" [(ngModel)]="location">
+    </div>
+    <button type="submit" class="border">Küldés</button>
+</form>
+
   

@@ -3,17 +3,27 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EmailService {
   private contactEmailApiUrl = 'https://kazanszerviz.net/sendMail.php';
 
   constructor(private http: HttpClient) {}
 
-  sendContactEmail(email: string, message: string): Observable<any> {
+  sendContactEmail(
+    name: string,
+    email: string,
+    message: string,
+    location: string,
+    telephone: number | any,
+
+  ): Observable<any> {
     const formData = new FormData();
+    formData.append('name', name);
     formData.append('email', email);
     formData.append('message', message);
+    formData.append('location', location);
+    formData.append('telephone', telephone);
 
     return this.http.post<any>(this.contactEmailApiUrl, formData);
   }
