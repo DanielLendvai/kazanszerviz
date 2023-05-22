@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './components/notfound/notfound.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
-import { ServicesComponent } from './components/services/services.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,10 +20,10 @@ const routes: Routes = [
     path: 'aboutus',
     component: AboutusComponent,
   },
-  {
+/*   {
     path: 'services',
     component: ServicesComponent,
-  },
+  }, */
   { path: '**', component: NotFoundComponent },
 ];
 

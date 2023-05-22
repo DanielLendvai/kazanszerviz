@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslationService } from 'src/app/services/translation.service';
 
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',

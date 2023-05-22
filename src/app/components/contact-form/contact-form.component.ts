@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { EmailService } from 'src/app/services/email.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -7,16 +7,22 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent {
-  public sendEmail(e: Event) {
-    emailjs.sendForm('service_bqd425f', 'template_rtb20ho', e.target as HTMLFormElement, 'C5ccnPSq4yrtL4zg2')
-      .then((result: EmailJSResponseStatus) => {
-        console.log(result.text);
-        window.alert("Üzenet elküldve.")
-      }, (error) => {
-        console.log(error.text);
-      })
-      .finally(()=> {
-        window.location.reload();
-      });
+  email!: string;
+  message!: string;
+
+  constructor(private emailService: EmailService) {}
+
+  submitForm(): void {
+    // Send the email
+    this.emailService.sendContactEmail(this.email, this.message).subscribe(
+      response => {
+        console.log(response); // Handle the response from the server
+        // Optionally, you can display a success message to the user or navigate to a success page
+      },
+      error => {
+        console.error(error); // Handle any errors that occurred during the request
+        // Optionally, you can display an error message to the user
+      }
+    );
   }
 }
