@@ -19,7 +19,20 @@
       <label for="location">Település, kerület:</label>
       <input type="text" id="location" name="location" [(ngModel)]="location">
     </div>
+    <div>
+      <label>Checkbox values:</label>
+      <div>
+        <input type="checkbox" id="checkbox1" name="checkboxes" value="Gázkészülék javítás" [checked]="isSelected('Gázkészülék javítás')" (change)="toggleCheckbox('Gázkészülék javítás')">
+        <label for="checkbox1">Gázkészülék javítás</label>
+      </div>
+      <div>
+        <input type="checkbox" id="checkbox2" name="checkboxes" value="Value 2" [checked]="isSelected('Value 2')" (change)="toggleCheckbox('Value 2')">
+        <label for="checkbox2">Value 2</label>
+      </div>
+      <div>
+        <input type="checkbox" id="checkbox3" name="checkboxes" value="Value 3" [checked]="isSelected('Value 3')" (change)="toggleCheckbox('Value 3')">
+        <label for="checkbox3">Value 3</label>
+      </div>
+    </div>
     <button type="submit" class="border">Küldés</button>
 </form>
-
-  

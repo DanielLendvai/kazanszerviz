@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,ts,css}",
-  "./node_modules/tw-elements/dist/js/**/*.js"],
+  content: ["./src/**/*.{html,ts,css}"],
   theme: {
     extend: {
       fontFamily: {
@@ -37,6 +36,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tw-elements/dist/plugin.cjs")],
-  darkMode: "class"
+  plugins: []
 };

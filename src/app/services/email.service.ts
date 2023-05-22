@@ -16,6 +16,7 @@ export class EmailService {
     message: string,
     location: string,
     telephone: number | any,
+    checkboxes: string[] 
 
   ): Observable<any> {
     const formData = new FormData();
@@ -24,6 +25,9 @@ export class EmailService {
     formData.append('message', message);
     formData.append('location', location);
     formData.append('telephone', telephone);
+    checkboxes.forEach(value => {
+      formData.append('checkboxes[]', value);
+    });
 
     return this.http.post<any>(this.contactEmailApiUrl, formData);
   }

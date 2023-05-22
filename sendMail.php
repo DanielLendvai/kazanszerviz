@@ -9,6 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = $_POST['message'];
     $location = $_POST['location'];
     $telephone = $_POST['telephone'];
+    $checkboxes = isset($_POST['checkboxes']) ? $_POST['checkboxes'] : [];
 
     // Set email headers
     $recipient = 'lendvai.daniel92@gmail.com'; // Update with your recipient email address
@@ -18,11 +19,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                "X-Mailer: PHP/" . phpversion();
 
     // Email content
-    $emailContent = "$name Az alábbi üzenetet küldte a kapcsolati ürlapon keresztül:\n\n";
+    $emailContent = "$name az alábbi üzenetet küldte a kapcsolati ürlapon keresztül:\n\n";
+    $emailContent .= "Üzenete: $message\n\n";
     $emailContent .= "Email címe: $email\n";
-    $emailContent .= "Üzenete: $message\n";
     $emailContent .= "Település, kerület: $location\n";
     $emailContent .= "Telefon száma: $telephone\n";
+    $emailContent .= "Választott szolgáltatások: " . implode(", ", $checkboxes) . "\n";
 
     // Send email
     if (mail($recipient, $subject, $emailContent, $headers)) {
