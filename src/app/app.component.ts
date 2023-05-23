@@ -17,13 +17,8 @@ import { CdkScrollable, ScrollDispatcher } from '@angular/cdk/scrolling';
   animations: [
     trigger('routeAnimation', [
       transition('* <=> *', [
-        /*         style({ position: 'relative' }),
-        style({ transform: 'translateY(-100%)' }), */
         style({ opacity: '0.2' }),
-        animate(
-          '.3s',
-          style({ /* transform: 'translateY(0)', */ opacity: '1' })
-        ),
+        animate('.3s', style({ opacity: '1' })),
       ]),
     ]),
   ],
@@ -39,12 +34,7 @@ export class AppComponent implements OnInit {
     '/home': 'white',
     '/services': '#e4e4e7',
     '/contact': '#f3f4f6',
-    '/aboutus': '#d4d4d4'
-  };
-  componentGradientMap: { [key: string]: string } = {
-    '/home': 'linear-gradient(to right, #b1b2bf61, #3ABFC6)',
-    '/services': 'linear-gradient(to right, #3ABFC6, #64B5F6)',
-    '/contact': 'linear-gradient(to right, #64B5F6, #b1b2bf61)',
+    '/aboutus': '#d4d4d4',
   };
 
   constructor(
@@ -59,20 +49,18 @@ export class AppComponent implements OnInit {
     });
   }
 
-  ngAfterViewInit() {
+  /*   ngAfterViewInit() {
     const divElement =
       this.scrollContainer.nativeElement.querySelector('footer');
     this.scrollDispatcher.scrolled().subscribe(() => {
       if (this.isElementInView(divElement)) {
-
-        console.log('in');
+         console.log('in'); 
       } else {
-
-        console.log('out');
+         console.log('out'); 
       }
     });
-  }
-  private isElementInView(element: HTMLElement): boolean {
+  } */
+  /*   private isElementInView(element: HTMLElement): boolean {
     if (!element) return false;
 
     const rect = element.getBoundingClientRect();
@@ -87,10 +75,11 @@ export class AppComponent implements OnInit {
       rect.bottom <= windowHeight &&
       rect.right <= windowWidth
     );
-  }
+  } */
 
   ngOnInit() {
     this.translationService.init();
+    console.log('https://linkedin.com/in/daniellendvai');
   }
   changeLanguage(lang: string) {
     this.translationService.setLanguage(lang);

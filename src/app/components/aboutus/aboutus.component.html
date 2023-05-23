@@ -1,3 +1,19 @@
-<div class="h-screen w-full bg-neutral-300">
-    <p>about us works!</p>
+<div class="min-h-screen flex w-full bg-neutral-300">
+  <div class="w-4/5 mx-auto py-40 max-sm:h-40 max-sm:w-full">
+    <ng-image-slider
+      #nav
+      [images]="imageObject"
+      [manageImageRatio]="false"
+      [imageSize]="{width: '550px', height: '400px'}"
+      [infinite]="false"
+      [autoSlide]="1"
+      [slideImage]="1"
+      [showArrow]="true"
+      [animationSpeed]="2"
+    ></ng-image-slider>
+  </div>
 </div>
+
+<!-- -->
+<!-- [manageImageRatio]="true" -->
+<!-- [imageSize]="{width: '250px', height: '200px'}"  -->

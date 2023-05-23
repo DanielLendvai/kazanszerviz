@@ -18,6 +18,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { HeaderComponent } from './components/header/header.component';
 import { OurservicesComponent } from './components/ourservices/ourservices.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -47,6 +48,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     ReactiveFormsModule,
     ScrollingModule,
+    NgImageSliderModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
