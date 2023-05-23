@@ -19,9 +19,9 @@ import { CdkScrollable, ScrollDispatcher } from '@angular/cdk/scrolling';
       transition('* <=> *', [
         /*         style({ position: 'relative' }),
         style({ transform: 'translateY(-100%)' }), */
-        style({ opacity: '0.5' }),
+        style({ opacity: '0.2' }),
         animate(
-          '0.5s',
+          '.3s',
           style({ /* transform: 'translateY(0)', */ opacity: '1' })
         ),
       ]),
@@ -37,8 +37,9 @@ export class AppComponent implements OnInit {
   activeComponent!: string;
   componentColorMap: { [key: string]: string } = {
     '/home': 'white',
-    '/services': '#575757',
-    '/contact': '#bdbdbd',
+    '/services': '#e4e4e7',
+    '/contact': '#f3f4f6',
+    '/aboutus': '#d4d4d4'
   };
   componentGradientMap: { [key: string]: string } = {
     '/home': 'linear-gradient(to right, #b1b2bf61, #3ABFC6)',
@@ -63,10 +64,10 @@ export class AppComponent implements OnInit {
       this.scrollContainer.nativeElement.querySelector('footer');
     this.scrollDispatcher.scrolled().subscribe(() => {
       if (this.isElementInView(divElement)) {
-        /*         divElement.classList.add('bg-flameColor'); */
+
         console.log('in');
       } else {
-        /*         divElement.classList.remove('bg-flameColor'); */
+
         console.log('out');
       }
     });

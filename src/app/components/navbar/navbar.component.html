@@ -1,35 +1,47 @@
 <nav
-  class="bg-white flex px-4 font-montserrat text-[#575757] text-base leading-5 z-50 items-center relative"
+  [ngStyle]="{ background: componentColorMap[activeComponent] }"
+  [class.stickyNav]="isNavbarSticky()"
+  class="flex flex-wrap px-4 font-montserrat text-[#575757] text-base leading-5 z-50 items-center"
 >
-  <div class="hidden sm:block font-bold py-0 ">logo</div>
-  <ul
-    class="px-2 ml-auto flex flex-wrap max-sm:justify-evenly space-x-2"
-  >
+  <div class="flex gap-[7px] flex-col text-left font-light py-4">
+    <span class="text-sm sm:text-[24px] drop-shadow-sm">Lorem Ipsum Dolor Sit.</span>
+    <span class="text-xs sm:text-[14px] drop-shadow-md"
+      >Lorem, ipsum dolor 2000, 52 Lorem, ipsum 2/a.
+    </span>
+    <div class="gap-[2px] flex items-center">
+      <a href="#"
+        ><img
+          src="assets/images/facebook.png"
+          alt="facebook"
+          class="h-[40px] max-sm:h-[35px]"
+         /></a
+      ><a href="#"
+        ><img src="assets/images/google.png" alt="google" class="h-[40px] max-sm:h-[35px]" /></a
+      ><a href="#"
+        ><img src="assets/images/telefon.png" alt="telefon" class="h-[40px] max-sm:h-[35px]"
+      /></a>
+      <a href="#" class="text-lg sm:text-[24px]">+36-30-123-4567 </a>
+    </div>
+  </div>
+  <!--   <div class="hidden sm:block font-bold py-0">logo</div> -->
+  <ul class="px-2 ml-auto flex flex-wrap max-sm:justify-evenly space-x-2">
     <li>
-      <a
-        routerLink="/home"
-        class="nav-link inline-flex p-4 items-center"
-      >
+      <a routerLink="/home" class="nav-link inline-flex p-4 items-center">
         <span>{{ "nav_home" | translate }}</span>
       </a>
     </li>
     <li>
-      <a
-        routerLink="/contact"
-        class="nav-link inline-flex p-4 items-center"
-      >
-        <span>{{ "nav_contact" | translate }}</span>
-      </a>
-    </li>
-    <li>
-      <a 
-      routerLink="/services"
-      class="nav-link inline-flex p-4 items-center">
+      <a routerLink="/services" class="nav-link inline-flex p-4 items-center">
         <span>{{ "nav_services" | translate }}</span>
       </a>
     </li>
     <li>
-      <a href="#" class="nav-link inline-flex p-4 items-center">
+      <a routerLink="/contact" class="nav-link inline-flex p-4 items-center">
+        <span>{{ "nav_contact" | translate }}</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/aboutus" class="nav-link inline-flex p-4 items-center">
         <span>{{ "nav_aboutus" | translate }}</span>
       </a>
     </li>

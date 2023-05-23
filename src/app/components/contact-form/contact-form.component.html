@@ -1,47 +1,11 @@
-<!-- <form (submit)="submitForm()" class="w-fit flex flex-col border-2 border-red-500">
-    <div>
-      <label for="name">Az ön neve:</label>
-      <input type="name" id="name" name="name" class="border-1 border-black" [(ngModel)]="name" required />
-    </div>
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" [(ngModel)]="email" required>
-    </div>
-    <div>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
-    </div>
-    <div>
-      <label for="telephone">Telefon:</label>
-      <input type="text" id="telephone" name="telephone" [(ngModel)]="telephone" required>
-    </div>
-    <div>
-      <label for="location">Település, kerület:</label>
-      <input type="text" id="location" name="location" [(ngModel)]="location">
-    </div>
-    <div>
-      <label>Checkbox values:</label>
-      <div>
-        <input type="checkbox" id="checkbox1" name="checkboxes" value="Gázkészülék javítás" [checked]="isSelected('Gázkészülék javítás')" (change)="toggleCheckbox('Gázkészülék javítás')">
-        <label for="checkbox1">Gázkészülék javítás</label>
-      </div>
-      <div>
-        <input type="checkbox" id="checkbox2" name="checkboxes" value="Value 2" [checked]="isSelected('Value 2')" (change)="toggleCheckbox('Value 2')">
-        <label for="checkbox2">Value 2</label>
-      </div>
-      <div>
-        <input type="checkbox" id="checkbox3" name="checkboxes" value="Value 3" [checked]="isSelected('Value 3')" (change)="toggleCheckbox('Value 3')">
-        <label for="checkbox3">Value 3</label>
-      </div>
-    </div>
-    <button type="submit" class="border">Küldés</button>
-</form>
- -->
 <div class="min-h-screen bg-gray-100 p-0 sm:p-12">
   <div
     class="mx-auto max-w-md px-6 py-12 bg-white border-0 shadow-lg sm:rounded-3xl"
   >
-    <h1 class="text-2xl font-bold mb-8">Kérjen ajánlatot!</h1>
+    <p class="text-[18px] text-left font-montserrat font-bold mb-8">
+      Lépjen velünk kapcsolatba az alábbi űrlap kitöltésével vagy
+      elérhetőségeinken.
+    </p>
     <form id="form" (submit)="submitForm()">
       <div class="relative z-0 w-full mb-5">
         <input
@@ -54,7 +18,7 @@
         <label
           for="name"
           class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-          >Az ön neve</label
+          >Név</label
         >
       </div>
 
@@ -68,7 +32,7 @@
         <label
           for="email"
           class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-          >Email címe</label
+          >Email cím</label
         >
       </div>
       <div class="relative z-0 w-full mb-5">
@@ -84,10 +48,10 @@
         <label
           for="telephone"
           class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-          >Az ön telefonszáma</label
+          >Telefonszám</label
         >
       </div>
-      <div class="relative z-0 w-full mb-5">
+      <div class="relative z-0 w-full mb-6">
         <input
           type="text"
           id="location"
@@ -109,7 +73,7 @@
         >
           Miben segíthetünk?
         </legend>
-        <div class="block pt-3 pb-2 space-x-4">
+        <div class="flex justify-stretch gap-4 py-3 flex-wrap">
           <label>
             <input
               type="checkbox"
@@ -122,18 +86,43 @@
             />
             Gázkészülék javítás
           </label>
-          <!-- <label>
+          <label>
             <input
               type="checkbox"
               id="checkbox2"
               name="checkboxes"
-              value="Gázkészülék"
-              [checked]="isSelected('Gázkészülék javítás')"
-              (change)="toggleCheckbox('Gázkészülék javítás')"
+              value="Időszakos karbantartás"
+              [checked]="isSelected('Időszakos karbantartás')"
+              (change)="toggleCheckbox('Időszakos karbantartás')"
               class="mr-2 text-black border-2 border-gray-300 focus:border-gray-300 focus:ring-black"
             />
-            Option 2
-          </label> -->
+            Időszakos karbantartás
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              id="checkbox3"
+              name="checkboxes"
+              value="Beüzemelés"
+              [checked]="isSelected('Beüzemelés')"
+              (change)="toggleCheckbox('Beüzemelés')"
+              class="mr-2 text-black border-2 border-gray-300 focus:border-gray-300 focus:ring-black"
+            />
+            Beüzemelés
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              id="checkbox4"
+              name="checkboxes"
+              value="Egyéb"
+              [checked]="isSelected('Egyéb')"
+              (change)="toggleCheckbox('Egyéb')"
+              class="mr-2 text-black border-2 border-gray-300 focus:border-gray-300 focus:ring-black"
+            />
+            Egyéb
+          </label>
+          <!-- Szolgáltatások: Javítás, időszakos karbantartás, beüzemelés, fűtési rendszer tisztítása -->
         </div>
       </fieldset>
       <div class="relative z-0 w-full mb-5">
@@ -149,10 +138,12 @@
         <label
           for="message"
           class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500"
-          >Kérjük írja le üzenetét.</label
+          >Egyéb üzenet</label
         >
       </div>
+
       <button
+        *ngIf="!showMessage"
         [disabled]="isSubmitting"
         type="submit"
         class="w-full px-6 py-3 mt-3 text-lg text-white transition-all duration-150 ease-linear rounded-lg shadow outline-none bg-flameColor hover:bg-pink-600 hover:shadow-lg focus:outline-none"
@@ -160,8 +151,7 @@
         {{ isSubmitting ? "Küldés, kérem várjon..." : "Küldés" }}
       </button>
     </form>
-    <div *ngIf="showMessage" class="flex flex-col font-bold text-base py-5">
-      <span>Köszönjük érdeklődését.</span>
+    <div *ngIf="showMessage" class="flex flex-col font-normal text-xl py-5">
       <span>{{ responseMessage }}</span>
     </div>
   </div>

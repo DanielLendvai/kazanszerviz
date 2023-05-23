@@ -16,7 +16,7 @@ export class ContactFormComponent {
   selectedCheckboxes: string[] = [];
   isSubmitting: boolean = false;
   showMessage: boolean = false;
-  responseMessage: string = 'Kollégánk hamarosan felveszi Önnel a kapcsolatot.';
+  responseMessage: string = 'Köszönjük, hogy felvette velünk a kapcsolatot.';
   constructor(private emailService: EmailService,  private router: Router) {}
 
   isSelected(value: string): boolean {

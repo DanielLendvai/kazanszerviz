@@ -16,6 +16,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { HeaderComponent } from './components/header/header.component';
+import { OurservicesComponent } from './components/ourservices/ourservices.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -32,7 +34,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    HeaderComponent,
+    OurservicesComponent
   ],
   imports: [
     BrowserModule,
