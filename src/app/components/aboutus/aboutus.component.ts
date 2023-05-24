@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AboutusComponent {
   imageObject = [
     {
-      image: '/assets/images/boiler-repair-1.jpg',
-      thumbImage: '/assets/images/boiler-repair-1.jpg',
+      image: 'assets/images/boiler-repair-1.jpg',
+      thumbImage: 'assets/images/boiler-repair-1.jpg',
       alt: 'alt of image',
       title: 'kép címe, leírása',
     },
@@ -21,25 +21,25 @@ export class AboutusComponent {
     },
     {
       image: 'assets/images/radiator-6679858_1920.jpg',
-      thumbImage: '/assets/images/radiator-6679858_1920.jpg',
+      thumbImage: 'assets/images/radiator-6679858_1920.jpg',
       alt: 'alt of image',
       title: 'kép címe, leírása',
     },
     {
       image: 'assets/images/water-heater-1816642.jpg',
-      thumbImage: '/assets/images/boiler-repair-1.jpg',
+      thumbImage: 'assets/images/boiler-repair-1.jpg',
       alt: 'alt of image',
       title: 'kép címe, leírása',
     },
     {
       image: 'assets/images/water-heater-1816642.jpg',
-      thumbImage: '/assets/images/boiler-repair-1.jpg',
+      thumbImage: 'assets/images/boiler-repair-1.jpg',
       alt: 'alt of image',
       title: 'kép címe, leírása',
     },
     {
       image: 'assets/images/water-heater-1816642.jpg',
-      thumbImage: '/assets/images/boiler-repair-1.jpg',
+      thumbImage: 'assets/images/boiler-repair-1.jpg',
       alt: 'alt of image',
       title: 'kép címe, leírása',
     },

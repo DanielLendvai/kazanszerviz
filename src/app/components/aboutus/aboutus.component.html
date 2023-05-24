@@ -1,19 +1,33 @@
 <div class="min-h-screen font-wix flex flex-col w-full bg-white">
-  <div class="w-full text-center flex flex-col gap-10 pt-10">
+  <div class="w-full text-lg text-center flex flex-col gap-10 pt-10">
     <h1 class="drop-shadow-2xl font-bold sm:text-5xl">Referenciák</h1>
-    <h3 class="drop-shadow-xl sm:text-2xl font-thin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, iusto!</h3>
+    <h3 class="drop-shadow-xl sm:text-2xl font-thin">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, iusto!
+    </h3>
   </div>
-  <div class="my-24 font-ysabeau text-2xl w-full flex px-40 gap-20">
-    <div class="flex text-justify">Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum fuga enim nesciunt eius perspiciatis nemo dolorem fugiat esse rem.</div>
-    <div class="flex text-justify">Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum fuga enim nesciunt eius perspiciatis nemo dolorem fugiat esse rem.</div>
-    <div class="flex text-justify">Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum fuga enim nesciunt eius perspiciatis nemo dolorem fugiat esse rem.</div>
+  <div class="my-10 sm:my-24 font-ysabeau text-2xl w-full flex flex-wrap justify-center gap-y-10 sm:gap-20 max-sm:px-5">
+    <div class="flex max-w-lg text-justify">
+      Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Beatae dolorum fuga enim nesciunt eius perspiciatis nemo
+      dolorem fugiat esse rem.
+    </div>
+    <div class="flex max-w-lg text-justify">
+      Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Beatae dolorum fuga enim nesciunt eius perspiciatis nemo
+      dolorem fugiat esse rem.
+    </div>
+    <div class="flex max-w-lg text-justify">
+      Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Beatae dolorum fuga enim nesciunt eius perspiciatis nemo
+      dolorem fugiat esse rem.
+    </div>
   </div>
-  <div class="w-4/5 mx-auto my-20 max-sm:h-40 max-sm:w-full">
+  <div class="w-3/4 mx-auto">
     <ng-image-slider
       #nav
       [images]="imageObject"
       [manageImageRatio]="false"
-      [imageSize]="{ width: '550px', height: '400px' }"
+      [imageSize]="{ width: '550px', height: '350px' }"
       [infinite]="false"
       [autoSlide]="1"
       [slideImage]="1"

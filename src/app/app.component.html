@@ -5,7 +5,10 @@
     [componentColorMap]="componentColorMap"
   ></app-navbar>
   <div [@routeAnimation]="getAnimationState(routerOutlet)">
-    <router-outlet #routerOutlet="outlet" (activate)="onActivate($event)"></router-outlet>
+    <router-outlet
+      #routerOutlet="outlet"
+      (activate)="onActivate($event)"
+    ></router-outlet>
   </div>
   <app-footer></app-footer>
 </div>

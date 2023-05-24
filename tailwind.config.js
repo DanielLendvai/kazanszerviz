@@ -15,6 +15,9 @@ module.exports = {
         flameColor2: "#e16221",
         waterColor: "#0090b3",
         grayColor: "#6e8899",
+        greenColor:"#119691",
+        darkGreenColor:"#167879",
+        lightGreenColor:"#c2ddd2"
       },
       boxShadow: {
         topShadow: "2px 0px 20px 10px rgba(225, 225, 225, 0.22)",

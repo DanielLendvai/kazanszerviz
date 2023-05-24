@@ -35,11 +35,11 @@ export class AppComponent implements OnInit {
     '/services': '#e4e4e7',
     '/contact': '#f3f4f6',
     '/aboutus': 'white',
-    '/services#section0': '#e4e4e7',
     '/services#section1': '#e4e4e7',
     '/services#section2': '#e4e4e7',
     '/services#section3': '#e4e4e7',
     '/services#section4': '#e4e4e7',
+    '/services#section5': '#e4e4e7',
   };
 
   constructor(
@@ -81,11 +81,11 @@ export class AppComponent implements OnInit {
       rect.right <= windowWidth
     );
   } */
-  onActivate(event: string) {
+  onActivate(event: any) {
     if (
       event.constructor.name === 'HomeComponent' ||
-      'ContactComponent' ||
-      'AboutusComponent'
+      event.constructor.name === 'ContactComponent' ||
+      event.constructor.name === 'AboutusComponent'
     ) {
       let scrollToTop = window.setInterval(() => {
         let pos = window.pageYOffset;
