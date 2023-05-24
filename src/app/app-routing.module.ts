@@ -25,6 +25,7 @@ const routes: Routes = [
     path: 'services',
     component: OurservicesComponent,
   },
+  { path: 'services/:section', component: OurservicesComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

@@ -34,7 +34,12 @@ export class AppComponent implements OnInit {
     '/home': 'white',
     '/services': '#e4e4e7',
     '/contact': '#f3f4f6',
-    '/aboutus': '#d4d4d4',
+    '/aboutus': 'white',
+    '/services#section0': '#e4e4e7',
+    '/services#section1': '#e4e4e7',
+    '/services#section2': '#e4e4e7',
+    '/services#section3': '#e4e4e7',
+    '/services#section4': '#e4e4e7',
   };
 
   constructor(
@@ -76,7 +81,22 @@ export class AppComponent implements OnInit {
       rect.right <= windowWidth
     );
   } */
-
+  onActivate(event: string) {
+    if (
+      event.constructor.name === 'HomeComponent' ||
+      'ContactComponent' ||
+      'AboutusComponent'
+    ) {
+      let scrollToTop = window.setInterval(() => {
+        let pos = window.pageYOffset;
+        if (pos > 0) {
+          window.scroll(0, 0);
+        } else {
+          window.clearInterval(scrollToTop);
+        }
+      }, 16);
+    }
+  }
   ngOnInit() {
     this.translationService.init();
     console.log('https://linkedin.com/in/daniellendvai');

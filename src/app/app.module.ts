@@ -19,6 +19,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { HeaderComponent } from './components/header/header.component';
 import { OurservicesComponent } from './components/ourservices/ourservices.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { ViewportScroller } from '@angular/common';
 
 
 export function HttpLoaderFactory(http: HttpClient) {

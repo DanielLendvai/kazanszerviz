@@ -8,6 +8,7 @@ module.exports = {
         ysabeau: ["Ysabeau", "sans-serif"],
         imprima: ["Imprima", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        wix: ['Wix Madefor Display', "sans-serif"]
       },
       colors: {
         flameColor: "#f46255",

@@ -1,13 +1,11 @@
 <div #scrollContainer cdkScrollable>
-  <!--     <app-header></app-header> -->
-  <!--  <app-navbar></app-navbar> -->
   <app-navbar
     [@routeAnimation]="getAnimationState(routerOutlet)"
     [activeComponent]="activeComponent"
     [componentColorMap]="componentColorMap"
   ></app-navbar>
   <div [@routeAnimation]="getAnimationState(routerOutlet)">
-    <router-outlet #routerOutlet="outlet"></router-outlet>
+    <router-outlet #routerOutlet="outlet" (activate)="onActivate($event)"></router-outlet>
   </div>
   <app-footer></app-footer>
 </div>
