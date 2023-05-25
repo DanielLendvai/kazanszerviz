@@ -1,14 +1,14 @@
 <nav
   [ngStyle]="{ background: componentColorMap[activeComponent] }"
   [class.stickyNav]="isNavbarSticky()"
-  class="flex flex-wrap sm:px-4 font-montserrat text-[#575757] text-base leading-5 z-50 items-center max-sm:ml-2"
+  class="flex flex-wrap sm:px-4 font-montserrat text-[#575757] text-base leading-5 z-50 items-center max-sm:pl-3"
 >
   <div class="flex gap-[7px] flex-col text-left font-light py-4">
     <span
       class="text-xl sm:text-[24px] drop-shadow-sm select-none tracking-wide"
       >Kazánszervíz<span class="text-darkGreenColor font-semibold">.net</span></span
     >
-    <div class="flex items-center">
+    <div class="flex items-center max-sm:w-screen">
       <a href="">
         <img
           src="assets/images/facebook.png"
@@ -23,7 +23,7 @@
           class="max-h-[35px]"
         />
       </a>
-      <a href="#" class="flex items-center text-xl sm:text-[24px] tracking-wide"
+      <a href="#" class="flex items-center text-xl sm:text-[24px] tracking-wide text-darkGreenColor font-bold"
         ><img
           src="assets/images/telefon.png"
           alt="telefon"
