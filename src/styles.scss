@@ -25,9 +25,10 @@
     @apply border-[2px] border-solid border-blue-950 border-opacity-40;
   }
 }
-html, body {
+body {
   overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
+  width:100%;
 }
