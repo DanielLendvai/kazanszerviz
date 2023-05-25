@@ -1,10 +1,7 @@
-#home-bg {
-/*   background: #606c88;  
-  background: -webkit-linear-gradient(
-    to right,
-    #3f4c6b,
-    #606c88
-  );  */ 
-  background: white;
- /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.bg-grad {
+  background: rgb(166,216,223);
+  background: -moz-linear-gradient(0deg, rgba(166,216,223,1) 36%, rgba(180,223,230,1) 67%, rgba(233,238,238,1) 96%);
+  background: -webkit-linear-gradient(0deg, rgba(166,216,223,1) 36%, rgba(180,223,230,1) 67%, rgba(233,238,238,1) 96%);
+  background: linear-gradient(0deg, rgba(166,216,223,1) 36%, rgba(180,223,230,1) 67%, rgba(233,238,238,1) 96%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6d8df",endColorstr="#e9eeee",GradientType=1); 
 }

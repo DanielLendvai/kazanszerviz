@@ -31,15 +31,15 @@ export class AppComponent implements OnInit {
 
   activeComponent!: string;
   componentColorMap: { [key: string]: string } = {
-    '/home': '#a6d8df',
+    '/home': '#e9eeee',
     '/contact': '#f3f4f6',
-    '/aboutus': 'white',
-    '/services': '#a6d8df',
-    '/services#section1': '#a6d8df',
-    '/services#section2': '#a6d8df',
-    '/services#section3': '#a6d8df',
-    '/services#section4': '#a6d8df',
-    '/services#section5': '#a6d8df',
+    '/aboutus': '#e9eeee',
+    '/services': '#e7eff0',
+    '/services#section1': '#e7eff0',
+    '/services#section2': '#e7eff0',
+    '/services#section3': '#e7eff0',
+    '/services#section4': '#e7eff0',
+    '/services#section5': '#e7eff0',
   };
 
   constructor(
