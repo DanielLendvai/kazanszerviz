@@ -14,13 +14,15 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./ourservices.component.scss'],
 })
 export class OurservicesComponent implements AfterViewInit {
-
   @ViewChild('scrollContainer') scrollContainer!: ElementRef;
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(
+    private elementRef: ElementRef,
+    private viewportScroller: ViewportScroller
+  ) {}
   ngAfterViewInit(): void {
     const fragment = window.location.hash.substring(1);
-    console.log(fragment)
+    console.log(fragment);
     if (fragment) {
       const element = this.elementRef.nativeElement.querySelector(
         '#' + fragment
@@ -29,5 +31,8 @@ export class OurservicesComponent implements AfterViewInit {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
+  }
+  public onClick(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
   }
 }

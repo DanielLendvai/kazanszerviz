@@ -1,82 +1,200 @@
-<div class="bg-[#e4e4e7] w-full h-full #scrollContainer">
-  <section
-    id="section1"
-    class="w-full flex items-center h-screen "
-  >
-    <div class="mx-auto my-auto w-1/2">
-      <h1>Gázkészülék javítás</h1>
-      <p>
-        0Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dicta
-        ab, magnam libero nulla assumenda architecto eos sunt ad quia commodi id
-        voluptatibus excepturi necessitatibus perferendis ipsam quam eaque.
-        Tempore repellat officiis eius, ab officia, sed quis doloremque corrupti
-        libero a, ea voluptatum nihil repudiandae adipisci nesciunt expedita!
-        Error officiis at nesciunt ad est expedita!
-      </p>
+<div
+  class="bg-[#e4e4e7] w-full h-full font-montserrat #scrollContainer sm:text-xl relative"
+>
+  <!-- section selector -->
+  <div class="fixed bottom-5 left-5">
+    <span
+      class="inline-flex items-center rounded-full h-20 p-2 bg-darkGreenColor text-white group transition-all duration-500 focus:ring-2 focus:ring-greenCbg-darkGreenColor focus:ring-offset-2 focus:outline-none sm:opacity-30 sm:hover:opacity-100"
+      role="alert"
+      tabindex="0"
+    >
+      <svg
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z"
+          clip-rule="evenodd"
+        />
+      </svg>
+
+      <span
+        class="whitespace-nowrap inline-block group-hover:max-w-screen-2xl group-focus:max-w-screen-2xl max-w-0 scale-80 group-hover:scale-100 overflow-auto transition-all duration-500 group-hover:px-2 group-focus:px-2"
+        ><div class="flex max-sm:text-xs flex-wrap gap-2">
+          <div class="cursor-pointer" (click)="onClick('section1')">
+            <p class="hover:font-bold">Gázkészülék javítás</p>
+          </div>
+          /
+          <div class="cursor-pointer" (click)="onClick('section2')">
+            <p class="hover:font-bold">Gázkészülék karbantartás</p>
+          </div>
+          /
+          <div class="cursor-pointer" (click)="onClick('section3')">
+            <p class="hover:font-bold">Gázkészülék csere</p>
+          </div>
+          /
+          <div class="cursor-pointer" (click)="onClick('section4')">
+            <p class="hover:font-bold">Üzembehelyezés</p>
+          </div>
+          /
+          <div class="cursor-pointer" (click)="onClick('section5')">
+            <p class="hover:font-bold">Fűtésrendszer átmosás</p>
+          </div>
+        </div>
+      </span>
+    </span>
+  </div>
+  <!--  -->
+  <section id="section1" class="w-full sm:min-h-[680px] flex items-center">
+    <div class="flex flex-col gap-16 sm:mx-20 max-sm:py-14">
+      <p class="text-4xl text-center">Gázkészülék javítás</p>
+      <div class="flex w-full gap-10 flex-wrap justify-center">
+        <ul class="sm:w-1/3 text-center">
+          <li class="font-bold">Készülékek</li>
+          <li>asdasdaf</li>
+          <li>adfadadf</li>
+          <li>adfdafafd</li>
+          <li class="font-bold pt-2">Márkák</li>
+          <li>adfaefe</li>
+          <li>adfaefe</li>
+          <li>adfaefe</li>
+        </ul>
+        <p class="sm:w-1/3 text-center">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+          facere esse inventore praesentium, recusandae magni dicta accusantium,
+          quidem nam qui tempora ipsum excepturi dolorum eius.
+          <br class="mb-2" />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
+          dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+          fugit?
+        </p>
+      </div>
     </div>
   </section>
   <section
     id="section2"
-    class="w-full flex items-center h-screen "
+    class="w-full sm:min-h-[680px] flex items-center justify-center"
   >
-    <div class="mx-auto my-auto w-1/2">
-      <h1>Gázkészülék karbantartás</h1>
-      <p>
-        1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dicta
-        ab, magnam libero nulla assumenda architecto eos sunt ad quia commodi id
-        voluptatibus excepturi necessitatibus perferendis ipsam quam eaque.
-        Tempore repellat officiis eius, ab officia, sed quis doloremque corrupti
-        libero a, ea voluptatum nihil repudiandae adipisci nesciunt expedita!
-        Error officiis at nesciunt ad est expedita!
-      </p>
+    <div class="flex flex-col gap-16 mx-20">
+      <p class="text-4xl text-center">Gázkészülék karbantartás</p>
+      <div class="flex w-full gap-20 justify-center">
+        <p class="w-1/3 text-center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
+          deserunt dignissimos? Ratione numquam expedita veniam! Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Eius, magnam.
+          <br class="mb-2" />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
+          dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Soluta, dolores?
+        </p>
+        <p class="w-1/3 text-center">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+          facere esse inventore praesentium, recusandae magni dicta accusantium,
+          quidem nam qui tempora ipsum excepturi dolorum eius.
+          <br class="mb-2" />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
+          dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+          fugit?
+        </p>
+      </div>
     </div>
   </section>
   <section
     id="section3"
-    class="w-full flex items-center h-screen "
+    class="w-full sm:min-h-[680px] flex items-center justify-center"
   >
-    <div class="mx-auto my-auto w-1/2">
-      <h1>Gázkészülék csere</h1>
-      <p>
-        2Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dicta
-        ab, magnam libero nulla assumenda architecto eos sunt ad quia commodi id
-        voluptatibus excepturi necessitatibus perferendis ipsam quam eaque.
-        Tempore repellat officiis eius, ab officia, sed quis doloremque corrupti
-        libero a, ea voluptatum nihil repudiandae adipisci nesciunt expedita!
-        Error officiis at nesciunt ad est expedita!
-      </p>
+    <div class="flex flex-col gap-16 mx-20">
+      <p class="text-4xl text-center">Gázkészülék csere</p>
+      <div class="flex w-full gap-20 justify-center">
+        <p class="w-1/3 text-center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
+          deserunt dignissimos? Ratione numquam expedita veniam! Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Eius, magnam.
+          <br class="mb-2" />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
+          dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Soluta, dolores?
+        </p>
+        <p class="w-1/3 text-center">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+          facere esse inventore praesentium, recusandae magni dicta accusantium,
+          quidem nam qui tempora ipsum excepturi dolorum eius.
+          <br class="mb-2" />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
+          dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+          fugit?
+        </p>
+      </div>
     </div>
   </section>
   <section
     id="section4"
-    class="w-full flex items-center h-screen "
+    class="w-full sm:min-h-[680px] flex items-center justify-center"
   >
-    <div class="mx-auto my-auto w-1/2">
-      <h1>Üzembehelyezés</h1>
-      <p>
-        3AAAAAAAAAAAAAALorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Quod dicta ab, magnam libero nulla assumenda architecto eos sunt ad quia
-        commodi id voluptatibus excepturi necessitatibus perferendis ipsam quam
-        eaque. Tempore repellat officiis eius, ab officia, sed quis doloremque
-        corrupti libero a, ea voluptatum nihil repudiandae adipisci nesciunt
-        expedita! Error officiis at nesciunt ad est expedita!
-      </p>
+    <div class="flex flex-col gap-16 mx-20">
+      <p class="text-4xl text-center">Üzembehelyezés</p>
+      <div class="flex w-full gap-20 justify-center">
+        <p class="w-1/3 text-center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
+          deserunt dignissimos? Ratione numquam expedita veniam! Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Eius, magnam.
+          <br class="mb-2" />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
+          dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Soluta, dolores?
+        </p>
+        <p class="w-1/3 text-center">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+          facere esse inventore praesentium, recusandae magni dicta accusantium,
+          quidem nam qui tempora ipsum excepturi dolorum eius.
+          <br class="mb-2" />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
+          dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+          fugit?
+        </p>
+      </div>
     </div>
   </section>
   <section
     id="section5"
-    class="w-full flex items-center h-screen "
+    class="w-full sm:min-h-[680px] flex items-center justify-center"
   >
-    <div class="mx-auto my-auto w-1/2">
-      <h1>Fűtésrendszer átmosás</h1>
-      <p>
-        4Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dicta
-        ab, magnam libero nulla assumenda architecto eos sunt ad quia commodi id
-        voluptatibus excepturi necessitatibus perferendis ipsam quam eaque.
-        Tempore repellat officiis eius, ab officia, sed quis doloremque corrupti
-        libero a, ea voluptatum nihil repudiandae adipisci nesciunt expedita!
-        Error officiis at nesciunt ad est expedita!
-      </p>
+    <div class="flex flex-col gap-16 mx-20">
+      <p class="text-4xl text-center">Fűtésrendszer átmosás</p>
+      <div class="flex w-full gap-20 justify-center">
+        <p class="w-1/3 text-center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
+          deserunt dignissimos? Ratione numquam expedita veniam! Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Eius, magnam.
+          <br class="mb-2" />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
+          dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Soluta, dolores?
+        </p>
+        <p class="w-1/3 text-center">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+          facere esse inventore praesentium, recusandae magni dicta accusantium,
+          quidem nam qui tempora ipsum excepturi dolorum eius.
+          <br class="mb-2" />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
+          dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+          fugit?
+        </p>
+      </div>
     </div>
   </section>
+  <app-header></app-header>
 </div>

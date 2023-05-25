@@ -2,29 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Imprima&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap");
 
 @layer utilities {
-    .nav-link {
-        @apply relative hover:text-darkGreenColor
-    }
-    .nav-link::after {
-        @apply content-[''] bg-darkGreenColor h-[2px] w-[0%] left-0 -bottom-[1px] rounded-xl absolute duration-300
-    }
-    .nav-link:hover::after {
-        @apply w-[100%]
-    }
-    .page-container {
-        @apply flex flex-col;
-    }
-    .card-border {
-        @apply border-[2px] border-solid border-blue-950 border-opacity-40
-    }
+  .nav-link {
+    @apply relative hover:text-darkGreenColor;
+  }
+  .nav-link::after {
+    @apply content-[''] bg-darkGreenColor h-[2px] w-[0%] left-0 -bottom-[1px] rounded-xl absolute duration-300;
+  }
+  .nav-link:hover::after {
+    @apply w-[100%];
+  }
+  .page-container {
+    @apply flex flex-col;
+  }
+  .card-border {
+    @apply border-[2px] border-solid border-blue-950 border-opacity-40;
+  }
 }
 body {
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
