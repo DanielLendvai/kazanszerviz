@@ -11,4 +11,6 @@ export class HomeComponent {
   navigateToSection(fragment: string): void {
     this.router.navigate(['/services'], { fragment: fragment });
   }
+
+
 }

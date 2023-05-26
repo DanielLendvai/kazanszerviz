@@ -8,16 +8,17 @@ module.exports = {
         ysabeau: ["Ysabeau", "sans-serif"],
         imprima: ["Imprima", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
-        wix: ['Wix Madefor Display', "sans-serif"]
+        wix: ["Wix Madefor Display", "sans-serif"],
       },
       colors: {
         flameColor: "#f46255",
         flameColor2: "#e16221",
         waterColor: "#0090b3",
         grayColor: "#6e8899",
-        greenColor:"#119691",
-        darkGreenColor:"#167879",
-        lightGreenColor:"#c2ddd2"
+        greenColor: "#119691",
+        darkGreenColor: "#167879",
+        lightGreenColor: "#c2ddd2",
+        whiteSmoke: "#f5f5f5",
       },
       boxShadow: {
         topShadow: "2px 0px 20px 10px rgba(225, 225, 225, 0.22)",
@@ -40,5 +41,5 @@ module.exports = {
       },
     },
   },
-  plugins: []
+  plugins: [],
 };

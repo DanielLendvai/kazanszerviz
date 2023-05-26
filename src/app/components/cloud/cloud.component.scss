@@ -1,0 +1,19 @@
+.cloud {
+  /* position: absolute;
+  top: 0;
+  left:50%; */
+  animation: float 10s infinite linear;
+  svg {
+    opacity: 0.3;
+    z-index: 10;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

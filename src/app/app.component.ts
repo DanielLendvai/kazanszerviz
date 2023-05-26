@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
   componentColorMap: { [key: string]: string } = {
     '/home': '#e9eeee',
     '/contact': '#f3f4f6',
-    '/aboutus': '#e9eeee',
+    '/aboutus': '#ffffff',
     '/services': '#e7eff0',
     '/services#section1': '#e7eff0',
     '/services#section2': '#e7eff0',

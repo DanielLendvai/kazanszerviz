@@ -8,7 +8,7 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { NotFoundComponent } from './components/notfound/notfound.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import {ContactComponent} from './components/contact/contact.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -19,8 +19,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { HeaderComponent } from './components/header/header.component';
 import { OurservicesComponent } from './components/ourservices/ourservices.component';
 import { NgImageSliderModule } from 'ng-image-slider';
-import { ViewportScroller } from '@angular/common';
-
+import { TranslateComponent } from './components/translate/translate.component';
+import { CloudComponent } from './components/cloud/cloud.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/');
@@ -38,7 +38,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     ContactFormComponent,
     HeaderComponent,
-    OurservicesComponent
+    OurservicesComponent,
+    TranslateComponent,
+    CloudComponent,
   ],
   imports: [
     BrowserModule,

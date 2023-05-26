@@ -14,6 +14,7 @@
 }
 @media only screen and (min-width: 900px) {
   .stickyNav {
+    opacity: 0.8;
     transition-duration: 1s;
     position: sticky;
     top: 0;

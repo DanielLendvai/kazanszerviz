@@ -1,10 +1,10 @@
 <div
-  class="grad-bg w-full h-full font-montserrat #scrollContainer sm:text-xl relative"
+  class="grad-bg w-full h-full font-montserrat #scrollContainer sm:text-xl relative flex flex-col sm:gap-28"
 >
   <!-- section selector -->
-  <div class="fixed bottom-5 left-5">
+  <div class="fixed bottom-5 left-5 z-50">
     <span
-      class="inline-flex items-center rounded-full h-20 p-2 bg-darkGreenColor text-white group transition-all duration-500 focus:ring-2 focus:ring-greenCbg-darkGreenColor focus:ring-offset-2 focus:outline-none sm:opacity-30 sm:hover:opacity-100"
+      class="inline-flex items-center rounded-full h-10 max-sm:focus:h-20 p-2 bg-darkGreenColor text-white group transition-all duration-500 focus:ring-2 focus:ring-greenCbg-darkGreenColor focus:ring-offset-2 focus:outline-none sm:opacity-70 z-10 sm:hover:opacity-100"
       role="alert"
       tabindex="0"
     >
@@ -51,7 +51,7 @@
   <!--  -->
   <section
     id="section1"
-    class="w-full sm:min-h-[680px] flex items-center justify-center max-sm:py-5"
+    class="w-full sm:min-h-[600px] flex items-center justify-center max-sm:py-5"
   >
     <div
       class="flex flex-col bg-lightGreenColor bg-opacity-30 gap-5 max-w-4xl shadow-gray-900 shadow-2xl rounded-3xl p-5 sm:p-14 mx-5 max-sm:my-10 border-[2px] border-black border-opacity-20"
@@ -73,7 +73,11 @@
           class="w-full mx-auto h-[2px] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-darkGreenColor to-transparent opacity-25 dark:opacity-100"
         />
         <div>
-          <p class="text-center text-3xl font-semibold font-ysabeau drop-shadow-md">Lorem, ipsum:</p>
+          <p
+            class="text-center text-3xl font-semibold font-ysabeau drop-shadow-md"
+          >
+            Lorem, ipsum:
+          </p>
         </div>
         <div class="flex w-full text-center gap-5 justify-evenly">
           <ul class="list-disc list-inside">
@@ -92,69 +96,94 @@
   </section>
   <section
     id="section2"
-    class="w-full sm:min-h-[680px] flex items-center justify-center"
+    class="w-full sm:min-h-[600px] flex items-center justify-center max-sm:py-5"
   >
-    <div class="flex flex-col gap-16 mx-20">
-      <p class="text-4xl text-center drop-shadow-md">
-        Gázkészülék karbantartás
-      </p>
-      <div class="flex w-full gap-20 justify-center">
-        <p class="w-1/3 text-center">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
-          deserunt dignissimos? Ratione numquam expedita veniam! Lorem ipsum
-          dolor, sit amet consectetur adipisicing elit. Eius, magnam.
-          <br class="mb-2" />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
-          dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Soluta, dolores?
+    <div
+      class="flex flex-col bg-lightGreenColor bg-opacity-30 gap-5 max-w-4xl shadow-gray-900 shadow-2xl rounded-3xl p-5 sm:p-14 mx-5 max-sm:my-10 border-[2px] border-black border-opacity-20"
+    >
+      <div>
+        <h1
+          class="text-4xl sm:tracking-wide font-semibold font-ysabeau drop-shadow-md "
+        >
+          Gázkészülék karbantartás
+        </h1>
+      </div>
+      <div class="flex gap-3 sm:gap-6 flex-col flex-wrap">
+        <p class="max-sm:text-center drop-shadow-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          soluta accusamus voluptatum voluptas veniam alias, repellat facilis
+          doloremque non perspiciatis.
         </p>
-        <p class="w-1/3 text-center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          facere esse inventore praesentium, recusandae magni dicta accusantium,
-          quidem nam qui tempora ipsum excepturi dolorum eius.
-          <br class="mb-2" />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
-          dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-          fugit?
-        </p>
+        <hr
+          class="w-full mx-auto h-[2px] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-darkGreenColor to-transparent opacity-25 dark:opacity-100"
+        />
+        <div>
+          <p
+            class="text-center text-3xl font-semibold font-ysabeau drop-shadow-md"
+          >
+            Lorem, ipsum:
+          </p>
+        </div>
+        <div class="flex w-full text-center gap-5 justify-evenly">
+          <ul class="list-disc list-inside">
+            <li>Lorem ipsum dolor</li>
+            <li>Reiciendis, ad!</li>
+            <li>sit amet consectetur</li>
+          </ul>
+          <ul class="list-disc list-inside">
+            <li>Lorem ipsum dolor</li>
+            <li>Reiciendis, ad!</li>
+            <li>sit amet consectetur</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
-  <section
-    id="section3"
-    class="w-full sm:min-h-[680px] flex items-center justify-center"
-  >
-    <div class="flex flex-col gap-16 mx-20">
-      <p class="text-4xl text-center drop-shadow-md">Gázkészülék csere</p>
-      <div class="flex w-full gap-20 justify-center">
-        <p class="w-1/3 text-center">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
-          deserunt dignissimos? Ratione numquam expedita veniam! Lorem ipsum
-          dolor, sit amet consectetur adipisicing elit. Eius, magnam.
-          <br class="mb-2" />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
-          dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Soluta, dolores?
+  <section id="section3" class="w-full sm:min-h-[600px] flex items-center">
+    <div
+      class="flex ml-auto flex-col bg-lightGreenColor bg-opacity-30 gap-5 max-w-4xl shadow-gray-900 shadow-2xl rounded-3xl p-5 sm:p-14 mx-5 max-sm:my-10 border-[2px] border-black border-opacity-20"
+    >
+      <div>
+        <h1
+          class="text-4xl sm:tracking-wide font-semibold font-ysabeau drop-shadow-md max-sm:whitespace-nowrap"
+        >
+          Gázkészülék javítás
+        </h1>
+      </div>
+      <div class="flex gap-3 sm:gap-6 flex-col flex-wrap">
+        <p class="max-sm:text-center drop-shadow-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          soluta accusamus voluptatum voluptas veniam alias, repellat facilis
+          doloremque non perspiciatis.
         </p>
-        <p class="w-1/3 text-center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          facere esse inventore praesentium, recusandae magni dicta accusantium,
-          quidem nam qui tempora ipsum excepturi dolorum eius.
-          <br class="mb-2" />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          esse nobis, minus magni ullam facere suscipit cum consequatur eligendi
-          dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-          fugit?
-        </p>
+        <hr
+          class="w-full mx-auto h-[2px] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-darkGreenColor to-transparent opacity-25 dark:opacity-100"
+        />
+        <div>
+          <p
+            class="text-center text-3xl font-semibold font-ysabeau drop-shadow-md"
+          >
+            Lorem, ipsum:
+          </p>
+        </div>
+        <div class="flex w-full text-center gap-5 justify-evenly">
+          <ul class="list-disc list-inside">
+            <li>Lorem ipsum dolor</li>
+            <li>Reiciendis, ad!</li>
+            <li>sit amet consectetur</li>
+          </ul>
+          <ul class="list-disc list-inside">
+            <li>Lorem ipsum dolor</li>
+            <li>Reiciendis, ad!</li>
+            <li>sit amet consectetur</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
   <section
     id="section4"
-    class="w-full sm:min-h-[680px] flex items-center justify-center"
+    class="w-full sm:min-h-[600px] flex items-center justify-center"
   >
     <div class="flex flex-col gap-16 mx-20">
       <p class="text-4xl text-center drop-shadow-md">Üzembehelyezés</p>
@@ -184,7 +213,7 @@
   </section>
   <section
     id="section5"
-    class="w-full sm:min-h-[680px] flex items-center justify-center"
+    class="w-full sm:min-h-[600px] flex items-center justify-center"
   >
     <div class="flex flex-col gap-16 mx-20">
       <p class="text-4xl text-center drop-shadow-md">Fűtésrendszer átmosás</p>
