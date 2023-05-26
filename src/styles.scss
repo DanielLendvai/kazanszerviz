@@ -18,6 +18,9 @@
   .nav-link:hover::after {
     @apply w-[100%];
   }
+  .focus:focus::after {
+    @apply content-[''] bg-lightGreenColor h-[2px] w-[100%] left-0 -bottom-[1px] rounded-xl absolute duration-300;
+  }
   .page-container {
     @apply flex flex-col;
   }
@@ -30,5 +33,5 @@ body {
 }
 html {
   scroll-behavior: smooth;
-  width:100%;
+  width: 100%;
 }
