@@ -11,23 +11,24 @@
       class="mt-3 sm:w-[450px] w-full mx-auto h-[2px] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-darkGreenColor to-transparent opacity-25 dark:opacity-100"
     />
   </div>
+  <!--   cards container -->
   <div
     class="flex w-full flex-wrap text-black font-montserrat justify-center items-center gap-x-10 gap-y-5 z-10 sm:px-10"
   >
-    <!--   cards container -->
     <!-- card -->
     <div
-      class="max-w-[330px] max-sm:mx-5 hover:scale-110 transition duration-500 ease-in-out card-border hover:border-darkGreenColor rounded-xl overflow-hidden shadow-lg"
+      class="max-w-[330px] max-sm:mx-5 card-border rounded-xl overflow-hidden shadow-lg"
     >
       <img
         (click)="navigateToSection('section1')"
-        class="w-full cursor-pointer border-b-[2px] border-gray-500 hover:border-darkGreenColor duration-700"
+        class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
         src="assets/images/boiler-repair-2.jpg"
         alt="Sunset in the mountains"
       />
-      <div class="px-6 py-4 bg-[#ffffffb2] text-center">
+      <div class="px-6 py-4 bg-[#ffffffb2] text-center card">
         <div
-          class="font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+          class="cursor-pointer font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+          (click)="navigateToSection('section1')"
         >
           Gázkészülék javítás
         </div>
@@ -40,17 +41,18 @@
     </div>
     <!-- card -->
     <div
-      class="max-w-[330px] max-sm:mx-5 hover:scale-110 transition duration-500 ease-in-out card-border hover:border-darkGreenColor rounded-xl overflow-hidden shadow-lg"
+      class="max-w-[330px] max-sm:mx-5 card-border rounded-xl overflow-hidden shadow-lg"
     >
       <img
         (click)="navigateToSection('section2')"
-        class="w-full cursor-pointer border-b-[2px] border-gray-500 hover:border-darkGreenColor duration-700"
+        class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
         src="assets/images/boiler-repair-2.jpg"
         alt="Sunset in the mountains"
-      />
-      <div class="px-6 py-4 bg-[#ffffffb2] text-center">
-        <div
-          class="font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+        />
+        <div class="px-6 py-4 bg-[#ffffffb2] text-center card2">
+          <div
+          class="cursor-pointer font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+          (click)="navigateToSection('section2')"
         >
           Gázkészülék karbantartás
         </div>
@@ -63,17 +65,18 @@
     </div>
     <!-- card -->
     <div
-      class="max-w-[330px] max-sm:mx-5 hover:scale-110 transition duration-500 ease-in-out card-border hover:border-darkGreenColor rounded-xl overflow-hidden shadow-lg"
+      class="max-w-[330px] max-sm:mx-5 card-border rounded-xl overflow-hidden shadow-lg"
     >
       <img
         (click)="navigateToSection('section3')"
-        class="w-full cursor-pointer border-b-[2px] border-gray-500 hover:border-darkGreenColor duration-700"
+        class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
         src="assets/images/boiler-repair-2.jpg"
         alt="Sunset in the mountains"
-      />
-      <div class="px-6 py-4 bg-[#ffffffb2] text-center">
-        <div
-          class="font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+        />
+        <div class="px-6 py-4 bg-[#ffffffb2] text-center card3">
+          <div
+          (click)="navigateToSection('section3')"
+          class="cursor-pointer font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
         >
           Gázkészülék csere
         </div>
@@ -86,17 +89,18 @@
     </div>
     <!-- card -->
     <div
-      class="max-w-[330px] max-sm:mx-5 hover:scale-110 transition duration-500 ease-in-out card-border hover:border-darkGreenColor rounded-xl overflow-hidden shadow-lg"
+      class="max-w-[330px] max-sm:mx-5 ease-in-out card-border rounded-xl overflow-hidden shadow-lg"
     >
       <img
-        (click)="navigateToSection('section4')"
-        class="w-full cursor-pointer border-b-[2px] border-gray-500 hover:border-darkGreenColor duration-700"
-        src="assets/images/boiler-repair-2.jpg"
-        alt="Sunset in the mountains"
+      (click)="navigateToSection('section4')"
+      class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
+      src="assets/images/boiler-repair-2.jpg"
+      alt="Sunset in the mountains"
       />
-      <div class="px-6 py-4 bg-[#ffffffb2] text-center">
+      <div class="px-6 py-4 bg-[#ffffffb2] text-center card4">
         <div
-          class="font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+        class="cursor-pointer font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+        (click)="navigateToSection('section4')"
         >
           Üzembehelyezés
         </div>
@@ -109,17 +113,18 @@
     </div>
     <!-- card -->
     <div
-      class="max-w-[330px] max-sm:mx-5 hover:scale-110 transition duration-500 ease-in-out card-border hover:border-darkGreenColor rounded-xl overflow-hidden shadow-lg"
+      class="max-w-[330px] max-sm:mx-5 ease-in-out card-border rounded-xl overflow-hidden shadow-lg"
     >
       <img
         (click)="navigateToSection('section5')"
-        class="w-full cursor-pointer border-b-[2px] border-gray-500 hover:border-darkGreenColor duration-700"
+        class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
         src="assets/images/boiler-repair-2.jpg"
         alt="Sunset in the mountains"
-      />
-      <div class="px-6 py-4 bg-[#ffffffb2] text-center">
-        <div
-          class="font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+        />
+        <div class="px-6 py-4 bg-[#ffffffb2] text-center card5">
+          <div
+          class="cursor-pointer font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+          (click)="navigateToSection('section5')"
         >
           Fűtésrendszer átmosás
         </div>

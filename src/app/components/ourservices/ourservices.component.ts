@@ -22,7 +22,7 @@ export class OurservicesComponent implements AfterViewInit {
   ) {}
   ngAfterViewInit(): void {
     const fragment = window.location.hash.substring(1);
-    console.log(fragment);
+
     if (fragment) {
       const element = this.elementRef.nativeElement.querySelector(
         '#' + fragment
@@ -34,5 +34,14 @@ export class OurservicesComponent implements AfterViewInit {
   }
   public onClick(elementId: string): void {
     this.viewportScroller.scrollToAnchor(elementId);
+  }
+
+  htmlContent!: string;
+  
+  displayHTML() {
+    this.htmlContent = `
+      <h2>Hello</h2>
+      <p>This is a <strong>dynamic</strong> content!</p>
+    `;
   }
 }
