@@ -5,37 +5,41 @@
     <p
       class="text-2xl sm:text-4xl drop-shadow-sm select-none tracking-wide font-bold text-darkGreenColor"
     >
-      Miben segíthetünk?
+      {{ "home_header" | translate }}
     </p>
+
     <hr
       class="mt-3 sm:w-[450px] w-full mx-auto h-[2px] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-darkGreenColor to-transparent opacity-25 dark:opacity-100"
     />
   </div>
   <!--   cards container -->
   <div
-    class="flex w-full flex-wrap text-black font-montserrat justify-center items-center gap-x-10 gap-y-5 z-10 sm:px-10"
+    class="flex w-full flex-wrap text-black font-montserrat font-medium justify-center items-center gap-x-10 gap-y-5 z-10 sm:px-10"
   >
     <!-- card -->
     <div
       class="max-w-[330px] max-sm:mx-5 card-border rounded-xl overflow-hidden shadow-lg"
     >
-      <img
+      <!-- <img
         (click)="navigateToSection('section1')"
         class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
         src="assets/images/boiler-repair-2.jpg"
         alt="Sunset in the mountains"
-      />
-      <div class="px-6 py-4 bg-[#ffffffb2] text-center card">
+      /> -->
+      <div
+        class="px-3 py-2 bg-[#ffffffb2] text-center card cursor-pointer"
+        (click)="navigateToSection('section1')"
+      >
         <div
-          class="cursor-pointer font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
-          (click)="navigateToSection('section1')"
+          class="font-bold text-xl mb-1 text-darkGreenColor tracking-wide whitespace-nowrap cardText"
         >
           Gázkészülék javítás
         </div>
         <p class="text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-          nihil.aaaa
+          Bármilyen probléma esetén, a legkorszerűbb eszközökkel és szaktudással
+          azonosítjuk a hibát és azonnali megoldást nyújtunk. Célunk, hogy
+          ügyfeleink ne csak megbízható, hanem hatékony és biztonságos
+          gázkészülékkel rendelkezzenek otthonukban.
         </p>
       </div>
     </div>
@@ -43,23 +47,26 @@
     <div
       class="max-w-[330px] max-sm:mx-5 card-border rounded-xl overflow-hidden shadow-lg"
     >
-      <img
+      <!-- <img
         (click)="navigateToSection('section2')"
         class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
         src="assets/images/boiler-repair-2.jpg"
         alt="Sunset in the mountains"
-        />
-        <div class="px-6 py-4 bg-[#ffffffb2] text-center card2">
-          <div
-          class="cursor-pointer font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
-          (click)="navigateToSection('section2')"
+      /> -->
+      <div
+        class="px-3 py-2 bg-[#ffffffb2] text-center card cursor-pointer"
+        (click)="navigateToSection('section2')"
+      >
+        <div
+          class="font-bold text-xl mb-1 text-darkGreenColor tracking-wide whitespace-nowrap cardText"
         >
           Gázkészülék karbantartás
         </div>
         <p class="text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-          nihil.aaaa
+          Rendszeres karbantartással biztosítjuk a gázkészülék hosszú
+          élettartamát és megbízható működését. Szakembereink alaposan
+          átvizsgálják a készüléket, megtisztítják, és szükség esetén
+          beállítják, hogy optimálisan működjön.
         </p>
       </div>
     </div>
@@ -67,23 +74,26 @@
     <div
       class="max-w-[330px] max-sm:mx-5 card-border rounded-xl overflow-hidden shadow-lg"
     >
-      <img
+      <!-- <img
         (click)="navigateToSection('section3')"
         class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
         src="assets/images/boiler-repair-2.jpg"
         alt="Sunset in the mountains"
-        />
-        <div class="px-6 py-4 bg-[#ffffffb2] text-center card3">
-          <div
-          (click)="navigateToSection('section3')"
-          class="cursor-pointer font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+      /> -->
+      <div
+        class="px-3 py-2 bg-[#ffffffb2] text-center card cursor-pointer"
+        (click)="navigateToSection('section3')"
+      >
+        <div
+          class="font-bold text-xl mb-1 text-darkGreenColor tracking-wide whitespace-nowrap cardText"
         >
           Gázkészülék csere
         </div>
         <p class="text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-          nihil.aaaa
+          Teljes körű gázkészülék csere szolgáltatásunk segít megújítani otthona
+          fűtésrendszerét. Szakembereink segítségével biztosak lehetünk abban,
+          hogy az új gázkészülék a legmodernebb technológiával rendelkezik és
+          hatékonyan működik.
         </p>
       </div>
     </div>
@@ -91,23 +101,26 @@
     <div
       class="max-w-[330px] max-sm:mx-5 ease-in-out card-border rounded-xl overflow-hidden shadow-lg"
     >
-      <img
-      (click)="navigateToSection('section4')"
-      class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
-      src="assets/images/boiler-repair-2.jpg"
-      alt="Sunset in the mountains"
-      />
-      <div class="px-6 py-4 bg-[#ffffffb2] text-center card4">
-        <div
-        class="cursor-pointer font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
+      <!-- <img
         (click)="navigateToSection('section4')"
+        class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
+        src="assets/images/boiler-repair-2.jpg"
+        alt="Sunset in the mountains"
+      /> -->
+      <div
+        class="px-3 py-2 bg-[#ffffffb2] text-center card cursor-pointer"
+        (click)="navigateToSection('section4')"
+      >
+        <div
+          class="font-bold text-xl mb-1 text-darkGreenColor tracking-wide whitespace-nowrap cardText"
         >
           Üzembehelyezés
         </div>
         <p class="text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-          nihil.aaaa
+          Az üzembehelyezés során biztosítjuk, hogy az újonnan telepített
+          gázkészülék megfelelően és biztonságosan üzemeljen. Ellenőrizzük a
+          készülék működését, beállítjuk a szükséges paramétereket és
+          tájékoztatást adunk az optimális használatról.
         </p>
       </div>
     </div>
@@ -115,25 +128,28 @@
     <div
       class="max-w-[330px] max-sm:mx-5 ease-in-out card-border rounded-xl overflow-hidden shadow-lg"
     >
-      <img
+      <div
+        class="px-3 py-5 bg-[#ffffffb2] text-center card cursor-pointer"
         (click)="navigateToSection('section5')"
-        class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
-        src="assets/images/boiler-repair-2.jpg"
-        alt="Sunset in the mountains"
-        />
-        <div class="px-6 py-4 bg-[#ffffffb2] text-center card5">
-          <div
-          class="cursor-pointer font-bold text-xl mb-2 text-darkGreenColor tracking-wide whitespace-nowrap"
-          (click)="navigateToSection('section5')"
+      >
+        <div
+          class="font-bold text-xl mb-1 text-darkGreenColor tracking-wide whitespace-nowrap cardText"
         >
           Fűtésrendszer átmosás
         </div>
         <p class="text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-          nihil.aaaa
+          Segítünk megszabadulni a lerakódásoktól és szennyeződésektől, amelyek
+          csökkenthetik a fűtési hatékonyságot. Különleges technikával
+          tisztítjuk ki a rendszert, hogy biztosítsuk a hatékony és megbízható
+          fűtést otthonában.
         </p>
       </div>
+      <!--       <img
+        (click)="navigateToSection('section5')"
+        class="w-full cursor-pointer border-t-[2px] border-darkGreenColor duration-700"
+        src="assets/images/boiler-repair-2.jpg"
+        alt="Sunset in the mountains"
+      /> -->
     </div>
   </div>
   <app-header></app-header>

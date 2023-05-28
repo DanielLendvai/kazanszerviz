@@ -20,21 +20,10 @@
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6d8df",endColorstr="#e9eeee",GradientType=1);
 }
-.card,
-.card2,
-.card3,
-.card4,
-.card5 {
+.card {
   position: relative;
 }
-.card2::before,
-.card2::after,
-.card3::before,
-.card3::after,
-.card4::before,
-.card4::after,
-.card5::before,
-.card5::after,
+
 .card::before,
 .card::after {
   position: absolute;
@@ -46,17 +35,13 @@
   justify-content: center;
   text-overflow: auto;
   font-size: 1.6rem;
-  font-weight: normal;
+  font-weight: 800;
   background-color: #1fa9ac;
   transition: all 0.5s;
   opacity: 1;
 }
 
-.card::before,
-.card2::before,
-.card3::before,
-.card4::before,
-.card5::before {
+.card::before {
   top: 0;
   right: 0;
   border-radius: 0 0px 0 100%;
@@ -67,49 +52,13 @@
   left: 0;
   border-radius: 0 100% 0 0px;
   color: whitesmoke;
-  content: "Gázkészülék javítás";
-}
-.card2::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100% 0 0px;
-  color: whitesmoke;
-  content: "Gázkészülék karbantartás";
-}
-.card3::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100% 0 0px;
-  color: whitesmoke;
-  content: "Gázkészülék csere";
-}
-.card4::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100% 0 0px;
-  color: whitesmoke;
-  content: "Üzembehelyezés";
-}
-.card5::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100% 0 0px;
-  color: whitesmoke;
-  content: "Fűtésrendszer átmosás";
+  content: attr(data-value) /* content: "Gázkészülék javítás" */;
 }
 
-.card2:hover::after,
-.card2:hover::before,
-.card3:hover::after,
-.card3:hover::before,
-.card4:hover::after,
-.card4:hover::before,
-.card5:hover::after,
-.card5:hover::before,
 .card:hover::before,
 .card:hover:after {
   width: 0%;
   height: 0%;
-  transition: all 0.5s;
+  transition: linear 0.5s;
   opacity: 0;
 }
