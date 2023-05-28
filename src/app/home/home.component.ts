@@ -12,11 +12,10 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/services'], { fragment: fragment });
   }
   ngOnInit(): void {
-    let cardsTexts = ['Gázkészülék javítás', 'Gázkészülék karbantartás', 'Gázkészülék csere', 'Üzembehelyezés', 'Fűtesrendszer átmosás'];
-    let cards = document.querySelectorAll('.card');
-
-    cards.forEach((card, index) => {
-
+    const cardsTexts: string[] = ['Gázkészülék javítás', 'Gázkészülék karbantartás', 'Gázkészülék csere', 'Üzembehelyezés', 'Fűtesrendszer átmosás'];
+    const cards: NodeListOf<Element> = document.querySelectorAll('.card');
+  
+    cards.forEach((card: Element, index: number) => {
       card.setAttribute('data-value', cardsTexts[index]);
     });
   }
