@@ -18,7 +18,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { HeaderComponent } from './components/header/header.component';
 import { OurservicesComponent } from './components/ourservices/ourservices.component';
-import { NgImageSliderModule } from 'ng-image-slider';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { TranslateComponent } from './components/translate/translate.component';
 import { CloudComponent } from './components/cloud/cloud.component';
 import { ScrollSpyModule } from 'ngx-scrollspy';
@@ -52,7 +52,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     ReactiveFormsModule,
     ScrollingModule,
-    NgImageSliderModule,
+    CarouselModule.forRoot(),
     ScrollSpyModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
