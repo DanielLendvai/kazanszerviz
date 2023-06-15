@@ -1,24 +1,9 @@
 .bg-grad {
-  background: rgb(166, 216, 223);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(166, 216, 223, 1) 36%,
-    rgba(180, 223, 230, 1) 67%,
-    rgba(233, 238, 238, 1) 96%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(166, 216, 223, 1) 36%,
-    rgba(180, 223, 230, 1) 67%,
-    rgba(233, 238, 238, 1) 96%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(166, 216, 223, 1) 36%,
-    rgba(180, 223, 230, 1) 67%,
-    rgba(233, 238, 238, 1) 96%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6d8df",endColorstr="#e9eeee",GradientType=1);
+  background: rgb(176,238,252);
+  background: -moz-linear-gradient(0deg, rgba(176,238,252,1) 18%, rgba(233,238,238,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(176,238,252,1) 18%, rgba(233,238,238,1) 100%);
+  background: linear-gradient(0deg, rgba(176,238,252,1) 18%, rgba(233,238,238,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0eefc",endColorstr="#e9eeee",GradientType=1); 
 }
 .card {
   position: relative;
@@ -61,4 +46,12 @@
   height: 0%;
   transition: linear 0.5s;
   opacity: 0;
-}
+} 
+.my-class::before,
+.my-class:after {
+  width: 0%;
+  height: 0%;
+  transition: linear 0.5s;
+  opacity: 0;
+} 
+

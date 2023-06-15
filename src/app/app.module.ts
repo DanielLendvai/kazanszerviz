@@ -21,6 +21,7 @@ import { OurservicesComponent } from './components/ourservices/ourservices.compo
 import { NgImageSliderModule } from 'ng-image-slider';
 import { TranslateComponent } from './components/translate/translate.component';
 import { CloudComponent } from './components/cloud/cloud.component';
+import { ScrollSpyModule } from 'ngx-scrollspy';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/');
@@ -52,6 +53,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ReactiveFormsModule,
     ScrollingModule,
     NgImageSliderModule,
+    ScrollSpyModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

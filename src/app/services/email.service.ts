@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class EmailService {
-  private contactEmailApiUrl = 'https://kazanszerviz.net/sendMail.php';
+  private contactEmailApiUrl = "https://kazanszerviz.net/sendMail.php";
 
   constructor(private http: HttpClient) {}
 
