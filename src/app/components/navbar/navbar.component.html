@@ -1,15 +1,16 @@
 <nav
   [ngStyle]="{ background: componentColorMap[activeComponent] }"
   [class.stickyNav]="isNavbarSticky()"
-  class="flex flex-wrap sm:px-4 font-montserrat text-[#575757] text-base leading-5 z-50 items-center max-sm:pl-3"
+  class="flex flex-wrap sm:px-4 font-montserrat text-[#575757] text-base leading-5 z-50 justify-between items-center max-sm:pl-3 pt-4"
 >
-  <div class="flex gap-[7px] flex-col text-left font-light py-4 animate__animated animate__backInLeft nav_container">
+  <div
+    class="flex flex-col text-left font-light animate__animated animate__backInLeft nav_container"
+  >
     <span
-      class="text-xl sm:text-[24px] drop-shadow-sm select-none tracking-wide"
-      >Kazánszervíz<span class="text-darkGreenColor font-semibold"
-        >.net</span
-      ></span
-    >
+      class="text-xl flex items-center sm:text-[24px] drop-shadow-sm select-none tracking-wide"
+      >Kazánszervíz<span class="text-darkGreenColor font-semibold">.net</span>
+    </span>
+
     <div class="flex items-center max-sm:w-screen">
       <a href="">
         <img
@@ -36,8 +37,14 @@
       </a>
     </div>
   </div>
+
+<!--   <img
+    src="assets/images/logo_xhatter.png"
+    alt="logoinvx"
+    class="h-12 sm:h-20 py-2 sm:pl-28 filter contrast-100"
+  /> -->
   <ul
-    class="sm:px-2 sm:ml-auto flex flex-wrap max-sm:text-sm max-sm:gap-2 sm:text-lg animate__animated animate__backInRight nav_container"
+    class="sm:px-2 flex flex-wrap max-sm:text-sm max-sm:gap-2 max-sm:pt-2 sm:text-lg animate__animated animate__backInRight nav_container"
   >
     <li>
       <a

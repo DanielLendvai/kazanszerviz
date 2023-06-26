@@ -14,7 +14,7 @@
   </div>
   <!--   cards container -->
   <div
-    class="flex w-full flex-wrap text-black font-montserrat font-medium justify-center items-center gap-x-14 gap-y-20 max-sm:gap-y-14 pb-5 sm:pb-32 z-10 sm:px-10"
+    class="flex w-full flex-wrap text-black font-montserrat font-medium justify-center items-center gap-x-14 gap-y-20 max-sm:gap-y-14 z-10 sm:px-10"
   >
     <!-- card -->
     <div
@@ -22,7 +22,7 @@
     >
       <img
         (click)="navigateToSection('section1')"
-        class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
+        class="w-full cursor-pointer border-b-[2px] h-52 border-gray-500 duration-700"
         src="assets/images/boiler-repair-2.jpg"
         alt="repair"
       />
@@ -38,7 +38,7 @@
           Gázkészülék javítás
         </div>
         <p class="text-base">
-          Bármilyen probléma esetén, a legkorszerűbb eszközökkel és szaktudással
+          A legkorszerűbb eszközökkel és szaktudással
           azonosítjuk a hibát és azonnali megoldást nyújtunk. Célunk, hogy
           ügyfeleink ne csak megbízható, hanem hatékony és biztonságos
           gázkészülékkel rendelkezzenek otthonukban.
@@ -51,8 +51,8 @@
     >
       <img
         (click)="navigateToSection('section2')"
-        class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
-        src="assets/images/boiler-repair-2.jpg"
+        class="w-full cursor-pointer border-b-[2px] h-52 border-gray-500 duration-700"
+        src="assets/images/gas-boiler-repair-4.jpg"
         alt="Sunset in the mountains"
       />
       <div
@@ -61,16 +61,16 @@
         id="element2"
         [class.my-class]="scrollFlags['element2']"
       >
+      
         <div
           class="font-bold text-xl mb-1 text-darkGreenColor tracking-wide whitespace-nowrap cardText"
         >
           Gázkészülék karbantartás
         </div>
         <p class="text-base">
-          Rendszeres karbantartással biztosítjuk a gázkészülék hosszú
-          élettartamát és megbízható működését. Szakembereink alaposan
-          átvizsgálják a készüléket, megtisztítják, és szükség esetén
-          beállítják, hogy optimálisan működjön.
+          A gázkazánok fenntartásával és karbantartásával a gázfogyasztók
+          biztosíthatják, hogy a berendezéseik hatékonyan és biztonságosan
+          működjenek.
         </p>
       </div>
     </div>
@@ -80,8 +80,8 @@
     >
       <img
         (click)="navigateToSection('section3')"
-        class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
-        src="assets/images/boiler-repair-2.jpg"
+        class="w-full cursor-pointer border-b-[2px] h-52 border-gray-500 duration-700"
+        src="assets/images/cards/boiler-replace.jpg"
         alt="Sunset in the mountains"
       />
       <div
@@ -109,8 +109,8 @@
     >
       <img
         (click)="navigateToSection('section4')"
-        class="w-full cursor-pointer border-b-[2px] border-gray-500 duration-700"
-        src="assets/images/boiler-repair-2.jpg"
+        class="w-full cursor-pointer border-b-[2px] h-52 border-gray-500 duration-700"
+        src="assets/images/water-heater-1816642.jpg"
         alt="Sunset in the mountains"
       />
       <div
@@ -156,8 +156,8 @@
       </div>
       <img
         (click)="navigateToSection('section5')"
-        class="w-full cursor-pointer border-b-[2px] border-darkGreenColor duration-700"
-        src="assets/images/boiler-repair-2.jpg"
+        class="w-full cursor-pointer border-b-[2px] h-52 border-gray-500 duration-700"
+        src="assets/images/cards/cleaning-process.jpg"
         alt="Sunset in the mountains"
       />
     </div>
@@ -185,11 +185,14 @@
       </div>
       <img
         (click)="navigateToSection('section5')"
-        class="w-full cursor-pointer border-b-[2px] border-darkGreenColor duration-700"
-        src="assets/images/boiler-repair-2.jpg"
+        class="w-full cursor-pointer border-b-[2px] h-52 border-gray-500 duration-700"
+        src="assets/images/cards/hocserelo.jpg"
         alt="Sunset in the mountains"
       />
     </div>
   </div>
+<!--   <div class="w-full h-64 -my-24 sm:h-[600px] flex justify-center ">
+    <img src="assets/images/logo_inverz_xhatter.png" alt="logoinvx" class="h-full w-9/12 filter contrast-125" />
+  </div> -->
   <app-header></app-header>
 </div>
