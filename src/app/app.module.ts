@@ -22,6 +22,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { TranslateComponent } from './components/translate/translate.component';
 import { CloudComponent } from './components/cloud/cloud.component';
 import { ScrollSpyModule } from 'ngx-scrollspy';
+import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/');
@@ -42,6 +44,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     OurservicesComponent,
     TranslateComponent,
     CloudComponent,
+    ImageCarouselComponent,
   ],
   imports: [
     BrowserModule,

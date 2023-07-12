@@ -1,0 +1,31 @@
+.galleria {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: none;
+  }
+  
+  .galleria__inner {
+    display: flex;
+    align-items: start;
+    position: relative;
+    cursor: grab;
+    touch-action: none;
+  }
+  
+  .galleria__item {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .galleria__item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  

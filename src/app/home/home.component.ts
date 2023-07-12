@@ -12,7 +12,7 @@ import { NavigationExtras, Router } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   isScrolledToSpecificPoint = false;
   scrollFlags: { [key: string]: boolean } = {
     element1: false,
@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/services'], { fragment: fragment });
   }
 
-  @HostListener('window:scroll')
+/*   @HostListener('window:scroll')
   onWindowScroll() {
     const scrollPosition = window.pageYOffset;
 
@@ -75,5 +75,5 @@ export class HomeComponent implements OnInit {
     cards.forEach((card: Element, index: number) => {
       card.setAttribute('data-value', cardsTexts[index]);
     });
-  }
+  } */
 }
